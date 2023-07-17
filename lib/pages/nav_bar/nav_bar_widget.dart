@@ -92,10 +92,10 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                         );
                       },
                       child: Container(
-                        height: 36.0,
+                        height: 32.0,
                         decoration: BoxDecoration(
                           color: widget.index == 1
-                              ? FlutterFlowTheme.of(context).alternate
+                              ? FlutterFlowTheme.of(context).accent4
                               : Color(0x006F7073),
                           borderRadius: BorderRadius.circular(2.0),
                         ),
@@ -111,7 +111,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                                   .override(
                                     fontFamily: 'Ubuntu',
                                     color: widget.index == 1
-                                        ? Colors.white
+                                        ? FlutterFlowTheme.of(context).accent1
                                         : FlutterFlowTheme.of(context)
                                             .alternate,
                                     fontSize: 10.0,
@@ -148,10 +148,10 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                         );
                       },
                       child: Container(
-                        height: 36.0,
+                        height: 32.0,
                         decoration: BoxDecoration(
                           color: widget.index == 2
-                              ? FlutterFlowTheme.of(context).alternate
+                              ? FlutterFlowTheme.of(context).accent4
                               : Color(0x006F7073),
                           borderRadius: BorderRadius.circular(2.0),
                         ),
@@ -167,7 +167,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                                   .override(
                                     fontFamily: 'Ubuntu',
                                     color: widget.index == 2
-                                        ? Colors.white
+                                        ? FlutterFlowTheme.of(context).accent1
                                         : FlutterFlowTheme.of(context)
                                             .alternate,
                                     fontSize: 10.0,
@@ -204,10 +204,10 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                         );
                       },
                       child: Container(
-                        height: 36.0,
+                        height: 32.0,
                         decoration: BoxDecoration(
                           color: widget.index == 3
-                              ? FlutterFlowTheme.of(context).alternate
+                              ? FlutterFlowTheme.of(context).accent4
                               : Color(0x006F7073),
                           borderRadius: BorderRadius.circular(2.0),
                         ),
@@ -223,7 +223,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                                   .override(
                                     fontFamily: 'Ubuntu',
                                     color: widget.index == 3
-                                        ? Colors.white
+                                        ? FlutterFlowTheme.of(context).accent1
                                         : FlutterFlowTheme.of(context)
                                             .alternate,
                                     fontSize: 10.0,
@@ -260,10 +260,10 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                         );
                       },
                       child: Container(
-                        height: 36.0,
+                        height: 32.0,
                         decoration: BoxDecoration(
                           color: widget.index == 4
-                              ? FlutterFlowTheme.of(context).alternate
+                              ? FlutterFlowTheme.of(context).accent4
                               : Color(0x006F7073),
                           borderRadius: BorderRadius.circular(2.0),
                         ),
@@ -279,7 +279,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                                   .override(
                                     fontFamily: 'Ubuntu',
                                     color: widget.index == 4
-                                        ? Colors.white
+                                        ? FlutterFlowTheme.of(context).accent1
                                         : FlutterFlowTheme.of(context)
                                             .alternate,
                                     fontSize: 10.0,
@@ -316,10 +316,10 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                         );
                       },
                       child: Container(
-                        height: 36.0,
+                        height: 32.0,
                         decoration: BoxDecoration(
                           color: widget.index == 5
-                              ? FlutterFlowTheme.of(context).alternate
+                              ? FlutterFlowTheme.of(context).accent4
                               : Color(0x006F7073),
                           borderRadius: BorderRadius.circular(2.0),
                         ),
@@ -335,7 +335,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                                   .override(
                                     fontFamily: 'Ubuntu',
                                     color: widget.index == 5
-                                        ? Colors.white
+                                        ? FlutterFlowTheme.of(context).accent1
                                         : FlutterFlowTheme.of(context)
                                             .alternate,
                                     fontSize: 10.0,
@@ -370,10 +370,10 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                       );
                     },
                     child: Container(
-                      height: 36.0,
+                      height: 32.0,
                       decoration: BoxDecoration(
                         color: widget.index == 6
-                            ? FlutterFlowTheme.of(context).alternate
+                            ? FlutterFlowTheme.of(context).accent4
                             : Color(0x006F7073),
                         borderRadius: BorderRadius.circular(2.0),
                       ),
@@ -389,7 +389,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                                 .override(
                                   fontFamily: 'Ubuntu',
                                   color: widget.index == 6
-                                      ? Colors.white
+                                      ? FlutterFlowTheme.of(context).accent1
                                       : FlutterFlowTheme.of(context).alternate,
                                   fontSize: 10.0,
                                   letterSpacing: 2.0,

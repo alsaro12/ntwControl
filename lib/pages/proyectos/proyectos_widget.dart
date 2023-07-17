@@ -46,7 +46,7 @@ class _ProyectosWidgetState extends State<ProyectosWidget> {
       onTap: () => FocusScope.of(context).requestFocus(_model.unfocusNode),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).info,
+        backgroundColor: FlutterFlowTheme.of(context).accent4,
         body: SafeArea(
           top: true,
           child: Stack(
@@ -98,15 +98,11 @@ class _ProyectosWidgetState extends State<ProyectosWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .displayLarge
                                                       .override(
-                                                        fontFamily: 'Core Sans',
+                                                        fontFamily: 'Rubik',
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .tertiary,
-                                                        fontSize: 66.0,
-                                                        fontWeight:
-                                                            FontWeight.normal,
-                                                        useGoogleFonts: false,
                                                         lineHeight: 1.2,
                                                       ),
                                             ),
@@ -189,1019 +185,22 @@ class _ProyectosWidgetState extends State<ProyectosWidget> {
                                         ),
                                       ],
                                     ),
-                                    Container(
-                                      width: double.infinity,
-                                      height:
-                                          MediaQuery.sizeOf(context).height *
-                                              0.8,
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .accent1,
-                                      ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 60.0, 0.0, 0.0),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          children: [
-                                            Align(
-                                              alignment: AlignmentDirectional(
-                                                  -1.0, 1.0),
-                                              child: Row(
-                                                mainAxisSize: MainAxisSize.max,
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.end,
-                                                children: [
-                                                  Container(
-                                                    width: 228.0,
-                                                    height: 2.0,
-                                                    decoration: BoxDecoration(
-                                                      color: FlutterFlowTheme
-                                                              .of(context)
-                                                          .primaryBackground,
-                                                    ),
-                                                  ),
-                                                  Container(
-                                                    height: 36.0,
-                                                    decoration: BoxDecoration(
-                                                      color: FlutterFlowTheme
-                                                              .of(context)
-                                                          .primaryBackground,
-                                                    ),
-                                                    child: Align(
-                                                      alignment:
-                                                          AlignmentDirectional(
-                                                              0.0, 0.0),
-                                                      child: Padding(
-                                                        padding:
-                                                            EdgeInsetsDirectional
-                                                                .fromSTEB(
-                                                                    16.0,
-                                                                    4.0,
-                                                                    16.0,
-                                                                    2.0),
-                                                        child: Text(
-                                                          'Nuestros servicios',
-                                                          style: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .headlineMedium
-                                                              .override(
-                                                                fontFamily:
-                                                                    'Ubuntu',
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .accent4,
-                                                                fontSize: 18.0,
-                                                                letterSpacing:
-                                                                    0.8,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .normal,
-                                                              ),
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                            Expanded(
-                                              child: Padding(
-                                                padding: EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        0.0, 50.0, 0.0, 20.0),
-                                                child: Container(
-                                                  width: double.infinity,
-                                                  height: 100.0,
-                                                  decoration: BoxDecoration(),
-                                                  child: Container(
-                                                    width: double.infinity,
-                                                    height: 500.0,
-                                                    child: Stack(
-                                                      children: [
-                                                        Padding(
-                                                          padding:
-                                                              EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      0.0,
-                                                                      0.0,
-                                                                      0.0,
-                                                                      60.0),
-                                                          child: PageView(
-                                                            controller: _model
-                                                                    .pageViewController1 ??=
-                                                                PageController(
-                                                                    initialPage:
-                                                                        0),
-                                                            scrollDirection:
-                                                                Axis.horizontal,
-                                                            children: [
-                                                              Row(
-                                                                mainAxisSize:
-                                                                    MainAxisSize
-                                                                        .max,
-                                                                children: [
-                                                                  Container(
-                                                                    width:
-                                                                        580.0,
-                                                                    height: double
-                                                                        .infinity,
-                                                                    decoration:
-                                                                        BoxDecoration(
-                                                                      color: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .secondaryBackground,
-                                                                      image:
-                                                                          DecorationImage(
-                                                                        fit: BoxFit
-                                                                            .cover,
-                                                                        image: Image
-                                                                            .asset(
-                                                                          'assets/images/Captura_de_pantalla_2023-07-13_152552_(1).png',
-                                                                        ).image,
-                                                                      ),
-                                                                    ),
-                                                                  ),
-                                                                  Flexible(
-                                                                    child:
-                                                                        Container(
-                                                                      width: double
-                                                                          .infinity,
-                                                                      decoration:
-                                                                          BoxDecoration(),
-                                                                      child:
-                                                                          Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                                                            90.0,
-                                                                            0.0,
-                                                                            120.0,
-                                                                            12.0),
-                                                                        child:
-                                                                            Column(
-                                                                          mainAxisSize:
-                                                                              MainAxisSize.max,
-                                                                          mainAxisAlignment:
-                                                                              MainAxisAlignment.spaceEvenly,
-                                                                          crossAxisAlignment:
-                                                                              CrossAxisAlignment.start,
-                                                                          children: [
-                                                                            Text(
-                                                                              'Área de telecomunicaciones',
-                                                                              textAlign: TextAlign.center,
-                                                                              style: FlutterFlowTheme.of(context).displaySmall.override(
-                                                                                    fontFamily: 'Montserrat',
-                                                                                    color: FlutterFlowTheme.of(context).accent4,
-                                                                                    fontSize: 32.0,
-                                                                                    fontWeight: FontWeight.w500,
-                                                                                  ),
-                                                                            ),
-                                                                            Column(
-                                                                              mainAxisSize: MainAxisSize.max,
-                                                                              mainAxisAlignment: MainAxisAlignment.start,
-                                                                              children: [
-                                                                                Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
-                                                                                  child: Row(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                                                                    children: [
-                                                                                      Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(22.0, 0.0, 12.0, 0.0),
-                                                                                        child: Icon(
-                                                                                          Icons.library_add_check_sharp,
-                                                                                          color: FlutterFlowTheme.of(context).alternate,
-                                                                                          size: 22.0,
-                                                                                        ),
-                                                                                      ),
-                                                                                      Expanded(
-                                                                                        child: Text(
-                                                                                          'Personal especializado en las áreas de informática y telecomunicaciones.',
-                                                                                          textAlign: TextAlign.start,
-                                                                                          style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                fontFamily: 'Montserrat',
-                                                                                                color: FlutterFlowTheme.of(context).accent1,
-                                                                                                fontSize: 12.0,
-                                                                                                letterSpacing: 0.5,
-                                                                                                fontWeight: FontWeight.w500,
-                                                                                                lineHeight: 1.5,
-                                                                                              ),
-                                                                                        ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                                Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
-                                                                                  child: Row(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                                                                    children: [
-                                                                                      Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(22.0, 0.0, 12.0, 0.0),
-                                                                                        child: Icon(
-                                                                                          Icons.library_add_check_sharp,
-                                                                                          color: FlutterFlowTheme.of(context).alternate,
-                                                                                          size: 22.0,
-                                                                                        ),
-                                                                                      ),
-                                                                                      Expanded(
-                                                                                        child: Text(
-                                                                                          'Personal certificado en tendido y conectorización en cableados CAT5E, CAT6, CAT6A у CAT8.',
-                                                                                          textAlign: TextAlign.start,
-                                                                                          style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                fontFamily: 'Montserrat',
-                                                                                                color: FlutterFlowTheme.of(context).accent1,
-                                                                                                fontSize: 12.0,
-                                                                                                letterSpacing: 0.5,
-                                                                                                fontWeight: FontWeight.w500,
-                                                                                                lineHeight: 1.5,
-                                                                                              ),
-                                                                                        ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                                Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
-                                                                                  child: Row(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                                                                    children: [
-                                                                                      Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(22.0, 0.0, 12.0, 0.0),
-                                                                                        child: Icon(
-                                                                                          Icons.library_add_check_sharp,
-                                                                                          color: FlutterFlowTheme.of(context).alternate,
-                                                                                          size: 22.0,
-                                                                                        ),
-                                                                                      ),
-                                                                                      Expanded(
-                                                                                        child: Text(
-                                                                                          'Diseño, suministro instalación y servicio de cableado estructurado para voz, datos y video.',
-                                                                                          textAlign: TextAlign.start,
-                                                                                          style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                fontFamily: 'Montserrat',
-                                                                                                color: FlutterFlowTheme.of(context).accent1,
-                                                                                                fontSize: 12.0,
-                                                                                                letterSpacing: 0.5,
-                                                                                                fontWeight: FontWeight.w500,
-                                                                                                lineHeight: 1.5,
-                                                                                              ),
-                                                                                        ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                                Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
-                                                                                  child: Row(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                                                                    children: [
-                                                                                      Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(22.0, 0.0, 12.0, 0.0),
-                                                                                        child: Icon(
-                                                                                          Icons.library_add_check_sharp,
-                                                                                          color: FlutterFlowTheme.of(context).alternate,
-                                                                                          size: 22.0,
-                                                                                        ),
-                                                                                      ),
-                                                                                      Expanded(
-                                                                                        child: Text(
-                                                                                          'Certificación para redes de voz, datos y video.',
-                                                                                          textAlign: TextAlign.start,
-                                                                                          style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                fontFamily: 'Montserrat',
-                                                                                                color: FlutterFlowTheme.of(context).accent1,
-                                                                                                fontSize: 12.0,
-                                                                                                letterSpacing: 0.5,
-                                                                                                fontWeight: FontWeight.w500,
-                                                                                                lineHeight: 1.5,
-                                                                                              ),
-                                                                                        ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                                Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
-                                                                                  child: Row(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    children: [
-                                                                                      Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(22.0, 0.0, 12.0, 0.0),
-                                                                                        child: Icon(
-                                                                                          Icons.library_add_check_sharp,
-                                                                                          color: FlutterFlowTheme.of(context).alternate,
-                                                                                          size: 22.0,
-                                                                                        ),
-                                                                                      ),
-                                                                                      Expanded(
-                                                                                        child: Text(
-                                                                                          'Mantenimiento preventivo de equipos periféricos.',
-                                                                                          textAlign: TextAlign.start,
-                                                                                          style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                fontFamily: 'Montserrat',
-                                                                                                color: FlutterFlowTheme.of(context).accent1,
-                                                                                                fontSize: 12.0,
-                                                                                                letterSpacing: 0.5,
-                                                                                                fontWeight: FontWeight.w500,
-                                                                                                lineHeight: 1.5,
-                                                                                              ),
-                                                                                        ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                                Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
-                                                                                  child: Row(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    children: [
-                                                                                      Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(22.0, 0.0, 12.0, 0.0),
-                                                                                        child: Icon(
-                                                                                          Icons.library_add_check_sharp,
-                                                                                          color: FlutterFlowTheme.of(context).alternate,
-                                                                                          size: 22.0,
-                                                                                        ),
-                                                                                      ),
-                                                                                      Expanded(
-                                                                                        child: Text(
-                                                                                          'Instalación ampliación y soporte para redes.',
-                                                                                          textAlign: TextAlign.start,
-                                                                                          style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                fontFamily: 'Montserrat',
-                                                                                                color: FlutterFlowTheme.of(context).accent1,
-                                                                                                fontSize: 12.0,
-                                                                                                letterSpacing: 0.5,
-                                                                                                fontWeight: FontWeight.w500,
-                                                                                                lineHeight: 1.5,
-                                                                                              ),
-                                                                                        ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                                Row(
-                                                                                  mainAxisSize: MainAxisSize.max,
-                                                                                  children: [
-                                                                                    Padding(
-                                                                                      padding: EdgeInsetsDirectional.fromSTEB(22.0, 0.0, 12.0, 0.0),
-                                                                                      child: Icon(
-                                                                                        Icons.library_add_check_sharp,
-                                                                                        color: FlutterFlowTheme.of(context).alternate,
-                                                                                        size: 22.0,
-                                                                                      ),
-                                                                                    ),
-                                                                                    Expanded(
-                                                                                      child: Text(
-                                                                                        'Implementación de data center.',
-                                                                                        textAlign: TextAlign.start,
-                                                                                        style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                              fontFamily: 'Montserrat',
-                                                                                              color: FlutterFlowTheme.of(context).accent1,
-                                                                                              fontSize: 12.0,
-                                                                                              letterSpacing: 0.5,
-                                                                                              fontWeight: FontWeight.w500,
-                                                                                              lineHeight: 1.5,
-                                                                                            ),
-                                                                                      ),
-                                                                                    ),
-                                                                                  ],
-                                                                                ),
-                                                                              ],
-                                                                            ),
-                                                                          ],
-                                                                        ),
-                                                                      ),
-                                                                    ),
-                                                                  ),
-                                                                ],
-                                                              ),
-                                                              Row(
-                                                                mainAxisSize:
-                                                                    MainAxisSize
-                                                                        .max,
-                                                                children: [
-                                                                  Container(
-                                                                    width:
-                                                                        580.0,
-                                                                    height: double
-                                                                        .infinity,
-                                                                    decoration:
-                                                                        BoxDecoration(
-                                                                      color: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .secondaryBackground,
-                                                                      image:
-                                                                          DecorationImage(
-                                                                        fit: BoxFit
-                                                                            .cover,
-                                                                        image: Image
-                                                                            .asset(
-                                                                          'assets/images/Captura_de_pantalla_2023-07-13_152603-transformed.png',
-                                                                        ).image,
-                                                                      ),
-                                                                    ),
-                                                                  ),
-                                                                  Expanded(
-                                                                    child:
-                                                                        Container(
-                                                                      width:
-                                                                          600.0,
-                                                                      decoration:
-                                                                          BoxDecoration(),
-                                                                      child:
-                                                                          Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                                                            90.0,
-                                                                            0.0,
-                                                                            120.0,
-                                                                            12.0),
-                                                                        child:
-                                                                            Column(
-                                                                          mainAxisSize:
-                                                                              MainAxisSize.max,
-                                                                          mainAxisAlignment:
-                                                                              MainAxisAlignment.spaceEvenly,
-                                                                          crossAxisAlignment:
-                                                                              CrossAxisAlignment.start,
-                                                                          children: [
-                                                                            Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
-                                                                              child: Text(
-                                                                                'Área de Video vigilancia',
-                                                                                textAlign: TextAlign.center,
-                                                                                style: FlutterFlowTheme.of(context).displaySmall.override(
-                                                                                      fontFamily: 'Montserrat',
-                                                                                      color: FlutterFlowTheme.of(context).tertiary,
-                                                                                      fontSize: 32.0,
-                                                                                      fontWeight: FontWeight.w500,
-                                                                                    ),
-                                                                              ),
-                                                                            ),
-                                                                            Column(
-                                                                              mainAxisSize: MainAxisSize.max,
-                                                                              children: [
-                                                                                Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
-                                                                                  child: Row(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                                                                    children: [
-                                                                                      Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(22.0, 4.0, 12.0, 4.0),
-                                                                                        child: Icon(
-                                                                                          Icons.library_add_check_sharp,
-                                                                                          color: FlutterFlowTheme.of(context).alternate,
-                                                                                          size: 22.0,
-                                                                                        ),
-                                                                                      ),
-                                                                                      Expanded(
-                                                                                        child: Text(
-                                                                                          'Ingeniería de proyectos.',
-                                                                                          textAlign: TextAlign.start,
-                                                                                          style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                fontFamily: 'Montserrat',
-                                                                                                color: FlutterFlowTheme.of(context).accent1,
-                                                                                                fontSize: 12.0,
-                                                                                                letterSpacing: 0.5,
-                                                                                                fontWeight: FontWeight.w500,
-                                                                                                lineHeight: 1.5,
-                                                                                              ),
-                                                                                        ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                                Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
-                                                                                  child: Row(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                                                                    children: [
-                                                                                      Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(22.0, 4.0, 12.0, 4.0),
-                                                                                        child: Icon(
-                                                                                          Icons.library_add_check_sharp,
-                                                                                          color: FlutterFlowTheme.of(context).alternate,
-                                                                                          size: 22.0,
-                                                                                        ),
-                                                                                      ),
-                                                                                      Expanded(
-                                                                                        child: Text(
-                                                                                          'Diseño e instalación de circuitos cerrados de televisión.',
-                                                                                          textAlign: TextAlign.start,
-                                                                                          style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                fontFamily: 'Montserrat',
-                                                                                                color: FlutterFlowTheme.of(context).accent1,
-                                                                                                fontSize: 12.0,
-                                                                                                letterSpacing: 0.5,
-                                                                                                fontWeight: FontWeight.w500,
-                                                                                                lineHeight: 1.5,
-                                                                                              ),
-                                                                                        ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                                Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
-                                                                                  child: Row(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                                                                    children: [
-                                                                                      Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(22.0, 4.0, 12.0, 4.0),
-                                                                                        child: Icon(
-                                                                                          Icons.library_add_check_sharp,
-                                                                                          color: FlutterFlowTheme.of(context).alternate,
-                                                                                          size: 22.0,
-                                                                                        ),
-                                                                                      ),
-                                                                                      Expanded(
-                                                                                        child: Text(
-                                                                                          'Implementación de salas de control.',
-                                                                                          textAlign: TextAlign.start,
-                                                                                          style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                fontFamily: 'Montserrat',
-                                                                                                color: FlutterFlowTheme.of(context).accent1,
-                                                                                                fontSize: 12.0,
-                                                                                                letterSpacing: 0.5,
-                                                                                                fontWeight: FontWeight.w500,
-                                                                                                lineHeight: 1.5,
-                                                                                              ),
-                                                                                        ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                                Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
-                                                                                  child: Row(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                                                                    children: [
-                                                                                      Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(22.0, 4.0, 12.0, 4.0),
-                                                                                        child: Icon(
-                                                                                          Icons.library_add_check_sharp,
-                                                                                          color: FlutterFlowTheme.of(context).alternate,
-                                                                                          size: 22.0,
-                                                                                        ),
-                                                                                      ),
-                                                                                      Expanded(
-                                                                                        child: Text(
-                                                                                          'Configuración y programación de equipos NVR, DVR y cámaras IP.',
-                                                                                          textAlign: TextAlign.start,
-                                                                                          style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                fontFamily: 'Montserrat',
-                                                                                                color: FlutterFlowTheme.of(context).accent1,
-                                                                                                fontSize: 12.0,
-                                                                                                letterSpacing: 0.5,
-                                                                                                fontWeight: FontWeight.w500,
-                                                                                                lineHeight: 1.5,
-                                                                                              ),
-                                                                                        ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                                Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
-                                                                                  child: Row(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    children: [
-                                                                                      Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(22.0, 4.0, 12.0, 4.0),
-                                                                                        child: Icon(
-                                                                                          Icons.library_add_check_sharp,
-                                                                                          color: FlutterFlowTheme.of(context).alternate,
-                                                                                          size: 22.0,
-                                                                                        ),
-                                                                                      ),
-                                                                                      Expanded(
-                                                                                        child: Text(
-                                                                                          'Elaboración de rutinas para cámaras PTZ.',
-                                                                                          textAlign: TextAlign.start,
-                                                                                          style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                fontFamily: 'Montserrat',
-                                                                                                color: FlutterFlowTheme.of(context).accent1,
-                                                                                                fontSize: 12.0,
-                                                                                                letterSpacing: 0.5,
-                                                                                                fontWeight: FontWeight.w500,
-                                                                                                lineHeight: 1.5,
-                                                                                              ),
-                                                                                        ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                                Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
-                                                                                  child: Row(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    children: [
-                                                                                      Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(22.0, 4.0, 12.0, 4.0),
-                                                                                        child: Icon(
-                                                                                          Icons.library_add_check_sharp,
-                                                                                          color: FlutterFlowTheme.of(context).alternate,
-                                                                                          size: 22.0,
-                                                                                        ),
-                                                                                      ),
-                                                                                      Expanded(
-                                                                                        child: Text(
-                                                                                          'Programación para consola de control de videovigilancia (Joystick, teclado y Jog Dial)',
-                                                                                          textAlign: TextAlign.start,
-                                                                                          style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                fontFamily: 'Montserrat',
-                                                                                                color: FlutterFlowTheme.of(context).accent1,
-                                                                                                fontSize: 12.0,
-                                                                                                letterSpacing: 0.5,
-                                                                                                fontWeight: FontWeight.w500,
-                                                                                                lineHeight: 1.5,
-                                                                                              ),
-                                                                                        ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                                Row(
-                                                                                  mainAxisSize: MainAxisSize.max,
-                                                                                  children: [
-                                                                                    Padding(
-                                                                                      padding: EdgeInsetsDirectional.fromSTEB(22.0, 4.0, 12.0, 4.0),
-                                                                                      child: Icon(
-                                                                                        Icons.library_add_check_sharp,
-                                                                                        color: FlutterFlowTheme.of(context).alternate,
-                                                                                        size: 22.0,
-                                                                                      ),
-                                                                                    ),
-                                                                                    Expanded(
-                                                                                      child: Text(
-                                                                                        'Personal certificado en mantenimiento preventivo de sistemas CCTV.',
-                                                                                        textAlign: TextAlign.start,
-                                                                                        style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                              fontFamily: 'Montserrat',
-                                                                                              color: FlutterFlowTheme.of(context).accent1,
-                                                                                              fontSize: 12.0,
-                                                                                              letterSpacing: 0.5,
-                                                                                              fontWeight: FontWeight.w500,
-                                                                                              lineHeight: 1.5,
-                                                                                            ),
-                                                                                      ),
-                                                                                    ),
-                                                                                  ],
-                                                                                ),
-                                                                              ],
-                                                                            ),
-                                                                          ],
-                                                                        ),
-                                                                      ),
-                                                                    ),
-                                                                  ),
-                                                                ],
-                                                              ),
-                                                              Row(
-                                                                mainAxisSize:
-                                                                    MainAxisSize
-                                                                        .max,
-                                                                children: [
-                                                                  Container(
-                                                                    width:
-                                                                        580.0,
-                                                                    height: double
-                                                                        .infinity,
-                                                                    decoration:
-                                                                        BoxDecoration(
-                                                                      color: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .secondaryBackground,
-                                                                      image:
-                                                                          DecorationImage(
-                                                                        fit: BoxFit
-                                                                            .cover,
-                                                                        image: Image
-                                                                            .asset(
-                                                                          'assets/images/Captura_de_pantalla_2023-07-13_152624-transformed.png',
-                                                                        ).image,
-                                                                      ),
-                                                                    ),
-                                                                  ),
-                                                                  Expanded(
-                                                                    child:
-                                                                        Container(
-                                                                      width:
-                                                                          600.0,
-                                                                      decoration:
-                                                                          BoxDecoration(),
-                                                                      child:
-                                                                          Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                                                            90.0,
-                                                                            0.0,
-                                                                            120.0,
-                                                                            12.0),
-                                                                        child:
-                                                                            Column(
-                                                                          mainAxisSize:
-                                                                              MainAxisSize.max,
-                                                                          mainAxisAlignment:
-                                                                              MainAxisAlignment.spaceEvenly,
-                                                                          crossAxisAlignment:
-                                                                              CrossAxisAlignment.start,
-                                                                          children: [
-                                                                            Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
-                                                                              child: Text(
-                                                                                'Área de Electricidad',
-                                                                                textAlign: TextAlign.center,
-                                                                                style: FlutterFlowTheme.of(context).displaySmall.override(
-                                                                                      fontFamily: 'Montserrat',
-                                                                                      color: FlutterFlowTheme.of(context).primaryBackground,
-                                                                                      fontSize: 32.0,
-                                                                                      fontWeight: FontWeight.w500,
-                                                                                    ),
-                                                                              ),
-                                                                            ),
-                                                                            Column(
-                                                                              mainAxisSize: MainAxisSize.max,
-                                                                              children: [
-                                                                                Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
-                                                                                  child: Row(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                                                                    children: [
-                                                                                      Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(22.0, 4.0, 12.0, 4.0),
-                                                                                        child: Icon(
-                                                                                          Icons.library_add_check_sharp,
-                                                                                          color: FlutterFlowTheme.of(context).alternate,
-                                                                                          size: 22.0,
-                                                                                        ),
-                                                                                      ),
-                                                                                      Expanded(
-                                                                                        child: Text(
-                                                                                          'Ingeniería y ejecución de proyectos de electricidad.',
-                                                                                          textAlign: TextAlign.start,
-                                                                                          style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                fontFamily: 'Montserrat',
-                                                                                                color: FlutterFlowTheme.of(context).accent1,
-                                                                                                fontSize: 12.0,
-                                                                                                letterSpacing: 0.5,
-                                                                                                fontWeight: FontWeight.w500,
-                                                                                                lineHeight: 1.5,
-                                                                                              ),
-                                                                                        ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                                Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
-                                                                                  child: Row(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                                                                    children: [
-                                                                                      Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(22.0, 4.0, 12.0, 4.0),
-                                                                                        child: Icon(
-                                                                                          Icons.library_add_check_sharp,
-                                                                                          color: FlutterFlowTheme.of(context).alternate,
-                                                                                          size: 22.0,
-                                                                                        ),
-                                                                                      ),
-                                                                                      Expanded(
-                                                                                        child: Text(
-                                                                                          'Tendidos de baja y mediana tensión.',
-                                                                                          textAlign: TextAlign.start,
-                                                                                          style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                fontFamily: 'Montserrat',
-                                                                                                color: FlutterFlowTheme.of(context).accent1,
-                                                                                                fontSize: 12.0,
-                                                                                                letterSpacing: 0.5,
-                                                                                                fontWeight: FontWeight.w500,
-                                                                                                lineHeight: 1.5,
-                                                                                              ),
-                                                                                        ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                                Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
-                                                                                  child: Row(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                                                                    children: [
-                                                                                      Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(22.0, 4.0, 12.0, 4.0),
-                                                                                        child: Icon(
-                                                                                          Icons.library_add_check_sharp,
-                                                                                          color: FlutterFlowTheme.of(context).alternate,
-                                                                                          size: 22.0,
-                                                                                        ),
-                                                                                      ),
-                                                                                      Expanded(
-                                                                                        child: Text(
-                                                                                          'Sistema de puesta a tierra.',
-                                                                                          textAlign: TextAlign.start,
-                                                                                          style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                fontFamily: 'Montserrat',
-                                                                                                color: FlutterFlowTheme.of(context).accent1,
-                                                                                                fontSize: 12.0,
-                                                                                                letterSpacing: 0.5,
-                                                                                                fontWeight: FontWeight.w500,
-                                                                                                lineHeight: 1.5,
-                                                                                              ),
-                                                                                        ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                                Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
-                                                                                  child: Row(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                                                                    children: [
-                                                                                      Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(22.0, 4.0, 12.0, 4.0),
-                                                                                        child: Icon(
-                                                                                          Icons.library_add_check_sharp,
-                                                                                          color: FlutterFlowTheme.of(context).alternate,
-                                                                                          size: 22.0,
-                                                                                        ),
-                                                                                      ),
-                                                                                      Expanded(
-                                                                                        child: Text(
-                                                                                          'Instalación de equipos UPS monofasicos para contingencia eléctrica.',
-                                                                                          textAlign: TextAlign.start,
-                                                                                          style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                fontFamily: 'Montserrat',
-                                                                                                color: FlutterFlowTheme.of(context).accent1,
-                                                                                                fontSize: 12.0,
-                                                                                                letterSpacing: 0.5,
-                                                                                                fontWeight: FontWeight.w500,
-                                                                                                lineHeight: 1.5,
-                                                                                              ),
-                                                                                        ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                                Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
-                                                                                  child: Row(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    children: [
-                                                                                      Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(22.0, 4.0, 12.0, 4.0),
-                                                                                        child: Icon(
-                                                                                          Icons.library_add_check_sharp,
-                                                                                          color: FlutterFlowTheme.of(context).alternate,
-                                                                                          size: 22.0,
-                                                                                        ),
-                                                                                      ),
-                                                                                      Expanded(
-                                                                                        child: Text(
-                                                                                          'Instalación eléctrica de distribución y alumbrado.',
-                                                                                          textAlign: TextAlign.start,
-                                                                                          style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                fontFamily: 'Montserrat',
-                                                                                                color: FlutterFlowTheme.of(context).accent1,
-                                                                                                fontSize: 12.0,
-                                                                                                letterSpacing: 0.5,
-                                                                                                fontWeight: FontWeight.w500,
-                                                                                                lineHeight: 1.5,
-                                                                                              ),
-                                                                                        ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                                Row(
-                                                                                  mainAxisSize: MainAxisSize.max,
-                                                                                  children: [
-                                                                                    Padding(
-                                                                                      padding: EdgeInsetsDirectional.fromSTEB(22.0, 4.0, 12.0, 4.0),
-                                                                                      child: Icon(
-                                                                                        Icons.library_add_check_sharp,
-                                                                                        color: FlutterFlowTheme.of(context).alternate,
-                                                                                        size: 22.0,
-                                                                                      ),
-                                                                                    ),
-                                                                                    Expanded(
-                                                                                      child: Text(
-                                                                                        'Personal certificado en mantenimiento preventivo de sistemas CCTV.',
-                                                                                        textAlign: TextAlign.start,
-                                                                                        style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                              fontFamily: 'Montserrat',
-                                                                                              color: FlutterFlowTheme.of(context).accent1,
-                                                                                              fontSize: 12.0,
-                                                                                              letterSpacing: 0.5,
-                                                                                              fontWeight: FontWeight.w500,
-                                                                                              lineHeight: 1.5,
-                                                                                            ),
-                                                                                      ),
-                                                                                    ),
-                                                                                  ],
-                                                                                ),
-                                                                              ],
-                                                                            ),
-                                                                          ],
-                                                                        ),
-                                                                      ),
-                                                                    ),
-                                                                  ),
-                                                                ],
-                                                              ),
-                                                            ],
-                                                          ),
-                                                        ),
-                                                        Align(
-                                                          alignment:
-                                                              AlignmentDirectional(
-                                                                  0.0, 1.0),
-                                                          child: Padding(
-                                                            padding:
-                                                                EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        0.0,
-                                                                        0.0,
-                                                                        0.0,
-                                                                        24.0),
-                                                            child: smooth_page_indicator
-                                                                .SmoothPageIndicator(
-                                                              controller: _model
-                                                                      .pageViewController1 ??=
-                                                                  PageController(
-                                                                      initialPage:
-                                                                          0),
-                                                              count: 3,
-                                                              axisDirection: Axis
-                                                                  .horizontal,
-                                                              onDotClicked:
-                                                                  (i) async {
-                                                                await _model
-                                                                    .pageViewController1!
-                                                                    .animateToPage(
-                                                                  i,
-                                                                  duration: Duration(
-                                                                      milliseconds:
-                                                                          500),
-                                                                  curve: Curves
-                                                                      .ease,
-                                                                );
-                                                              },
-                                                              effect: smooth_page_indicator
-                                                                  .ExpandingDotsEffect(
-                                                                expansionFactor:
-                                                                    8.0,
-                                                                spacing: 8.0,
-                                                                radius: 1.0,
-                                                                dotWidth: 12.0,
-                                                                dotHeight: 2.0,
-                                                                dotColor: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .alternate,
-                                                                activeDotColor:
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .tertiary,
-                                                                paintStyle:
-                                                                    PaintingStyle
-                                                                        .fill,
-                                                              ),
-                                                            ),
-                                                          ),
-                                                        ),
-                                                      ],
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 40.0, 0.0, 0.0),
+                                    Material(
+                                      color: Colors.transparent,
+                                      elevation: 3.0,
                                       child: Container(
                                         width: double.infinity,
                                         height:
                                             MediaQuery.sizeOf(context).height *
                                                 0.8,
-                                        decoration: BoxDecoration(),
+                                        decoration: BoxDecoration(
+                                          color: FlutterFlowTheme.of(context)
+                                              .accent1,
+                                        ),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 20.0, 0.0, 0.0),
+                                                  0.0, 60.0, 0.0, 0.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
@@ -1214,58 +213,1091 @@ class _ProyectosWidgetState extends State<ProyectosWidget> {
                                                   crossAxisAlignment:
                                                       CrossAxisAlignment.end,
                                                   children: [
-                                                    Container(
-                                                      width: 228.0,
-                                                      height: 2.0,
-                                                      decoration: BoxDecoration(
-                                                        color: FlutterFlowTheme
-                                                                .of(context)
-                                                            .primaryBackground,
+                                                    Material(
+                                                      color: Colors.transparent,
+                                                      elevation: 1.0,
+                                                      child: Container(
+                                                        width: 114.0,
+                                                        height: 2.0,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .primaryBackground,
+                                                        ),
                                                       ),
                                                     ),
-                                                    Container(
-                                                      height: 36.0,
-                                                      decoration: BoxDecoration(
-                                                        color: FlutterFlowTheme
-                                                                .of(context)
-                                                            .primaryBackground,
-                                                      ),
-                                                      child: Align(
-                                                        alignment:
-                                                            AlignmentDirectional(
-                                                                0.0, 0.0),
-                                                        child: Padding(
-                                                          padding:
-                                                              EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      16.0,
-                                                                      4.0,
-                                                                      12.0,
-                                                                      2.0),
-                                                          child: Text(
-                                                            'Experiencias exitosas',
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .headlineMedium
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Ubuntu',
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .accent4,
-                                                                  fontSize:
-                                                                      18.0,
-                                                                  letterSpacing:
-                                                                      0.8,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .normal,
-                                                                ),
+                                                    Material(
+                                                      color: Colors.transparent,
+                                                      elevation: 1.0,
+                                                      child: Container(
+                                                        height: 32.0,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .primaryBackground,
+                                                        ),
+                                                        child: Align(
+                                                          alignment:
+                                                              AlignmentDirectional(
+                                                                  0.0, 0.0),
+                                                          child: Padding(
+                                                            padding:
+                                                                EdgeInsetsDirectional
+                                                                    .fromSTEB(
+                                                                        16.0,
+                                                                        4.0,
+                                                                        16.0,
+                                                                        2.0),
+                                                            child: Text(
+                                                              'Nuestros servicios',
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .headlineMedium
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        'Ubuntu',
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .accent4,
+                                                                    fontSize:
+                                                                        16.0,
+                                                                    letterSpacing:
+                                                                        0.8,
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .normal,
+                                                                  ),
+                                                            ),
                                                           ),
                                                         ),
                                                       ),
                                                     ),
                                                   ],
+                                                ),
+                                              ),
+                                              Expanded(
+                                                child: Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          0.0, 50.0, 0.0, 20.0),
+                                                  child: Container(
+                                                    width: double.infinity,
+                                                    height: 100.0,
+                                                    decoration: BoxDecoration(),
+                                                    child: Container(
+                                                      width: double.infinity,
+                                                      height: 500.0,
+                                                      child: Stack(
+                                                        children: [
+                                                          Padding(
+                                                            padding:
+                                                                EdgeInsetsDirectional
+                                                                    .fromSTEB(
+                                                                        0.0,
+                                                                        0.0,
+                                                                        0.0,
+                                                                        60.0),
+                                                            child: PageView(
+                                                              controller: _model
+                                                                      .pageViewController1 ??=
+                                                                  PageController(
+                                                                      initialPage:
+                                                                          0),
+                                                              scrollDirection:
+                                                                  Axis.horizontal,
+                                                              children: [
+                                                                Row(
+                                                                  mainAxisSize:
+                                                                      MainAxisSize
+                                                                          .max,
+                                                                  children: [
+                                                                    Container(
+                                                                      width:
+                                                                          580.0,
+                                                                      height: double
+                                                                          .infinity,
+                                                                      decoration:
+                                                                          BoxDecoration(
+                                                                        color: FlutterFlowTheme.of(context)
+                                                                            .secondaryBackground,
+                                                                        image:
+                                                                            DecorationImage(
+                                                                          fit: BoxFit
+                                                                              .cover,
+                                                                          image:
+                                                                              Image.asset(
+                                                                            'assets/images/Captura_de_pantalla_2023-07-13_152552_(1).png',
+                                                                          ).image,
+                                                                        ),
+                                                                      ),
+                                                                    ),
+                                                                    Flexible(
+                                                                      child:
+                                                                          Container(
+                                                                        width: double
+                                                                            .infinity,
+                                                                        decoration:
+                                                                            BoxDecoration(),
+                                                                        child:
+                                                                            Padding(
+                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                              68.0,
+                                                                              0.0,
+                                                                              68.0,
+                                                                              12.0),
+                                                                          child:
+                                                                              Column(
+                                                                            mainAxisSize:
+                                                                                MainAxisSize.max,
+                                                                            mainAxisAlignment:
+                                                                                MainAxisAlignment.spaceEvenly,
+                                                                            crossAxisAlignment:
+                                                                                CrossAxisAlignment.start,
+                                                                            children: [
+                                                                              Text(
+                                                                                'Área de telecomunicaciones',
+                                                                                textAlign: TextAlign.center,
+                                                                                style: FlutterFlowTheme.of(context).displaySmall.override(
+                                                                                      fontFamily: 'Montserrat',
+                                                                                      color: FlutterFlowTheme.of(context).info,
+                                                                                      fontSize: 32.0,
+                                                                                      fontWeight: FontWeight.w500,
+                                                                                    ),
+                                                                              ),
+                                                                              Column(
+                                                                                mainAxisSize: MainAxisSize.max,
+                                                                                mainAxisAlignment: MainAxisAlignment.start,
+                                                                                children: [
+                                                                                  Padding(
+                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                                                                                    child: Row(
+                                                                                      mainAxisSize: MainAxisSize.max,
+                                                                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                                                                      children: [
+                                                                                        Padding(
+                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
+                                                                                          child: FaIcon(
+                                                                                            FontAwesomeIcons.checkDouble,
+                                                                                            color: FlutterFlowTheme.of(context).alternate,
+                                                                                            size: 22.0,
+                                                                                          ),
+                                                                                        ),
+                                                                                        Expanded(
+                                                                                          child: Text(
+                                                                                            'Personal especializado en las áreas de informática y telecomunicaciones.',
+                                                                                            textAlign: TextAlign.start,
+                                                                                            style: FlutterFlowTheme.of(context).labelLarge.override(
+                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  color: FlutterFlowTheme.of(context).accent4,
+                                                                                                  fontSize: 12.0,
+                                                                                                  letterSpacing: 0.5,
+                                                                                                  fontWeight: FontWeight.w500,
+                                                                                                  lineHeight: 1.5,
+                                                                                                ),
+                                                                                          ),
+                                                                                        ),
+                                                                                      ],
+                                                                                    ),
+                                                                                  ),
+                                                                                  Padding(
+                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                                                                                    child: Row(
+                                                                                      mainAxisSize: MainAxisSize.max,
+                                                                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                                                                      children: [
+                                                                                        Padding(
+                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
+                                                                                          child: FaIcon(
+                                                                                            FontAwesomeIcons.checkDouble,
+                                                                                            color: FlutterFlowTheme.of(context).alternate,
+                                                                                            size: 22.0,
+                                                                                          ),
+                                                                                        ),
+                                                                                        Expanded(
+                                                                                          child: Text(
+                                                                                            'Personal certificado en tendido y conectorización en cableados CAT5E, CAT6, CAT6A у CAT8.',
+                                                                                            textAlign: TextAlign.start,
+                                                                                            style: FlutterFlowTheme.of(context).labelLarge.override(
+                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  color: FlutterFlowTheme.of(context).accent4,
+                                                                                                  fontSize: 12.0,
+                                                                                                  letterSpacing: 0.5,
+                                                                                                  fontWeight: FontWeight.w500,
+                                                                                                  lineHeight: 1.5,
+                                                                                                ),
+                                                                                          ),
+                                                                                        ),
+                                                                                      ],
+                                                                                    ),
+                                                                                  ),
+                                                                                  Padding(
+                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                                                                                    child: Row(
+                                                                                      mainAxisSize: MainAxisSize.max,
+                                                                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                                                                      children: [
+                                                                                        Padding(
+                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
+                                                                                          child: FaIcon(
+                                                                                            FontAwesomeIcons.checkDouble,
+                                                                                            color: FlutterFlowTheme.of(context).alternate,
+                                                                                            size: 22.0,
+                                                                                          ),
+                                                                                        ),
+                                                                                        Expanded(
+                                                                                          child: Text(
+                                                                                            'Diseño, suministro instalación y servicio de cableado estructurado para voz, datos y video.',
+                                                                                            textAlign: TextAlign.start,
+                                                                                            style: FlutterFlowTheme.of(context).labelLarge.override(
+                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  color: FlutterFlowTheme.of(context).accent4,
+                                                                                                  fontSize: 12.0,
+                                                                                                  letterSpacing: 0.5,
+                                                                                                  fontWeight: FontWeight.w500,
+                                                                                                  lineHeight: 1.5,
+                                                                                                ),
+                                                                                          ),
+                                                                                        ),
+                                                                                      ],
+                                                                                    ),
+                                                                                  ),
+                                                                                  Padding(
+                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                                                                                    child: Row(
+                                                                                      mainAxisSize: MainAxisSize.max,
+                                                                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                                                                      children: [
+                                                                                        Padding(
+                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
+                                                                                          child: FaIcon(
+                                                                                            FontAwesomeIcons.checkDouble,
+                                                                                            color: FlutterFlowTheme.of(context).alternate,
+                                                                                            size: 22.0,
+                                                                                          ),
+                                                                                        ),
+                                                                                        Expanded(
+                                                                                          child: Text(
+                                                                                            'Certificación para redes de voz, datos y video.',
+                                                                                            textAlign: TextAlign.start,
+                                                                                            style: FlutterFlowTheme.of(context).labelLarge.override(
+                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  color: FlutterFlowTheme.of(context).accent4,
+                                                                                                  fontSize: 12.0,
+                                                                                                  letterSpacing: 0.5,
+                                                                                                  fontWeight: FontWeight.w500,
+                                                                                                  lineHeight: 1.5,
+                                                                                                ),
+                                                                                          ),
+                                                                                        ),
+                                                                                      ],
+                                                                                    ),
+                                                                                  ),
+                                                                                  Padding(
+                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                                                                                    child: Row(
+                                                                                      mainAxisSize: MainAxisSize.max,
+                                                                                      children: [
+                                                                                        Padding(
+                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
+                                                                                          child: FaIcon(
+                                                                                            FontAwesomeIcons.checkDouble,
+                                                                                            color: FlutterFlowTheme.of(context).alternate,
+                                                                                            size: 22.0,
+                                                                                          ),
+                                                                                        ),
+                                                                                        Expanded(
+                                                                                          child: Text(
+                                                                                            'Mantenimiento preventivo de equipos periféricos.',
+                                                                                            textAlign: TextAlign.start,
+                                                                                            style: FlutterFlowTheme.of(context).labelLarge.override(
+                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  color: FlutterFlowTheme.of(context).accent4,
+                                                                                                  fontSize: 12.0,
+                                                                                                  letterSpacing: 0.5,
+                                                                                                  fontWeight: FontWeight.w500,
+                                                                                                  lineHeight: 1.5,
+                                                                                                ),
+                                                                                          ),
+                                                                                        ),
+                                                                                      ],
+                                                                                    ),
+                                                                                  ),
+                                                                                  Padding(
+                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                                                                                    child: Row(
+                                                                                      mainAxisSize: MainAxisSize.max,
+                                                                                      children: [
+                                                                                        Padding(
+                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
+                                                                                          child: FaIcon(
+                                                                                            FontAwesomeIcons.checkDouble,
+                                                                                            color: FlutterFlowTheme.of(context).alternate,
+                                                                                            size: 22.0,
+                                                                                          ),
+                                                                                        ),
+                                                                                        Expanded(
+                                                                                          child: Text(
+                                                                                            'Instalación ampliación y soporte para redes.',
+                                                                                            textAlign: TextAlign.start,
+                                                                                            style: FlutterFlowTheme.of(context).labelLarge.override(
+                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  color: FlutterFlowTheme.of(context).accent4,
+                                                                                                  fontSize: 12.0,
+                                                                                                  letterSpacing: 0.5,
+                                                                                                  fontWeight: FontWeight.w500,
+                                                                                                  lineHeight: 1.5,
+                                                                                                ),
+                                                                                          ),
+                                                                                        ),
+                                                                                      ],
+                                                                                    ),
+                                                                                  ),
+                                                                                  Row(
+                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                    children: [
+                                                                                      Padding(
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
+                                                                                        child: FaIcon(
+                                                                                          FontAwesomeIcons.checkDouble,
+                                                                                          color: FlutterFlowTheme.of(context).alternate,
+                                                                                          size: 22.0,
+                                                                                        ),
+                                                                                      ),
+                                                                                      Expanded(
+                                                                                        child: Text(
+                                                                                          'Implementación de data center.',
+                                                                                          textAlign: TextAlign.start,
+                                                                                          style: FlutterFlowTheme.of(context).labelLarge.override(
+                                                                                                fontFamily: 'Montserrat',
+                                                                                                color: FlutterFlowTheme.of(context).accent4,
+                                                                                                fontSize: 12.0,
+                                                                                                letterSpacing: 0.5,
+                                                                                                fontWeight: FontWeight.w500,
+                                                                                                lineHeight: 1.5,
+                                                                                              ),
+                                                                                        ),
+                                                                                      ),
+                                                                                    ],
+                                                                                  ),
+                                                                                ],
+                                                                              ),
+                                                                            ],
+                                                                          ),
+                                                                        ),
+                                                                      ),
+                                                                    ),
+                                                                  ],
+                                                                ),
+                                                                Row(
+                                                                  mainAxisSize:
+                                                                      MainAxisSize
+                                                                          .max,
+                                                                  children: [
+                                                                    Container(
+                                                                      width:
+                                                                          580.0,
+                                                                      height: double
+                                                                          .infinity,
+                                                                      decoration:
+                                                                          BoxDecoration(
+                                                                        color: FlutterFlowTheme.of(context)
+                                                                            .secondaryBackground,
+                                                                        image:
+                                                                            DecorationImage(
+                                                                          fit: BoxFit
+                                                                              .cover,
+                                                                          image:
+                                                                              Image.asset(
+                                                                            'assets/images/Captura_de_pantalla_2023-07-13_152603-transformed.png',
+                                                                          ).image,
+                                                                        ),
+                                                                      ),
+                                                                    ),
+                                                                    Expanded(
+                                                                      child:
+                                                                          Container(
+                                                                        width:
+                                                                            600.0,
+                                                                        decoration:
+                                                                            BoxDecoration(),
+                                                                        child:
+                                                                            Padding(
+                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                              68.0,
+                                                                              0.0,
+                                                                              68.0,
+                                                                              12.0),
+                                                                          child:
+                                                                              Column(
+                                                                            mainAxisSize:
+                                                                                MainAxisSize.max,
+                                                                            mainAxisAlignment:
+                                                                                MainAxisAlignment.spaceEvenly,
+                                                                            crossAxisAlignment:
+                                                                                CrossAxisAlignment.start,
+                                                                            children: [
+                                                                              Padding(
+                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
+                                                                                child: Text(
+                                                                                  'Área de Video vigilancia',
+                                                                                  textAlign: TextAlign.center,
+                                                                                  style: FlutterFlowTheme.of(context).displaySmall.override(
+                                                                                        fontFamily: 'Montserrat',
+                                                                                        color: FlutterFlowTheme.of(context).info,
+                                                                                        fontSize: 32.0,
+                                                                                        fontWeight: FontWeight.w500,
+                                                                                      ),
+                                                                                ),
+                                                                              ),
+                                                                              Column(
+                                                                                mainAxisSize: MainAxisSize.max,
+                                                                                children: [
+                                                                                  Padding(
+                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                                                                                    child: Row(
+                                                                                      mainAxisSize: MainAxisSize.max,
+                                                                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                                                                      children: [
+                                                                                        Padding(
+                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 12.0, 4.0),
+                                                                                          child: FaIcon(
+                                                                                            FontAwesomeIcons.checkDouble,
+                                                                                            color: FlutterFlowTheme.of(context).alternate,
+                                                                                            size: 22.0,
+                                                                                          ),
+                                                                                        ),
+                                                                                        Expanded(
+                                                                                          child: Text(
+                                                                                            'Ingeniería de proyectos.',
+                                                                                            textAlign: TextAlign.start,
+                                                                                            style: FlutterFlowTheme.of(context).labelLarge.override(
+                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  color: FlutterFlowTheme.of(context).accent4,
+                                                                                                  fontSize: 12.0,
+                                                                                                  letterSpacing: 0.5,
+                                                                                                  fontWeight: FontWeight.w500,
+                                                                                                  lineHeight: 1.5,
+                                                                                                ),
+                                                                                          ),
+                                                                                        ),
+                                                                                      ],
+                                                                                    ),
+                                                                                  ),
+                                                                                  Padding(
+                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                                                                                    child: Row(
+                                                                                      mainAxisSize: MainAxisSize.max,
+                                                                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                                                                      children: [
+                                                                                        Padding(
+                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 12.0, 4.0),
+                                                                                          child: FaIcon(
+                                                                                            FontAwesomeIcons.checkDouble,
+                                                                                            color: FlutterFlowTheme.of(context).alternate,
+                                                                                            size: 22.0,
+                                                                                          ),
+                                                                                        ),
+                                                                                        Expanded(
+                                                                                          child: Text(
+                                                                                            'Diseño e instalación de circuitos cerrados de televisión.',
+                                                                                            textAlign: TextAlign.start,
+                                                                                            style: FlutterFlowTheme.of(context).labelLarge.override(
+                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  color: FlutterFlowTheme.of(context).accent4,
+                                                                                                  fontSize: 12.0,
+                                                                                                  letterSpacing: 0.5,
+                                                                                                  fontWeight: FontWeight.w500,
+                                                                                                  lineHeight: 1.5,
+                                                                                                ),
+                                                                                          ),
+                                                                                        ),
+                                                                                      ],
+                                                                                    ),
+                                                                                  ),
+                                                                                  Padding(
+                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                                                                                    child: Row(
+                                                                                      mainAxisSize: MainAxisSize.max,
+                                                                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                                                                      children: [
+                                                                                        Padding(
+                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 12.0, 4.0),
+                                                                                          child: FaIcon(
+                                                                                            FontAwesomeIcons.checkDouble,
+                                                                                            color: FlutterFlowTheme.of(context).alternate,
+                                                                                            size: 22.0,
+                                                                                          ),
+                                                                                        ),
+                                                                                        Expanded(
+                                                                                          child: Text(
+                                                                                            'Implementación de salas de control.',
+                                                                                            textAlign: TextAlign.start,
+                                                                                            style: FlutterFlowTheme.of(context).labelLarge.override(
+                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  color: FlutterFlowTheme.of(context).accent4,
+                                                                                                  fontSize: 12.0,
+                                                                                                  letterSpacing: 0.5,
+                                                                                                  fontWeight: FontWeight.w500,
+                                                                                                  lineHeight: 1.5,
+                                                                                                ),
+                                                                                          ),
+                                                                                        ),
+                                                                                      ],
+                                                                                    ),
+                                                                                  ),
+                                                                                  Padding(
+                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                                                                                    child: Row(
+                                                                                      mainAxisSize: MainAxisSize.max,
+                                                                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                                                                      children: [
+                                                                                        Padding(
+                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 12.0, 4.0),
+                                                                                          child: FaIcon(
+                                                                                            FontAwesomeIcons.checkDouble,
+                                                                                            color: FlutterFlowTheme.of(context).alternate,
+                                                                                            size: 22.0,
+                                                                                          ),
+                                                                                        ),
+                                                                                        Expanded(
+                                                                                          child: Text(
+                                                                                            'Configuración y programación de equipos NVR, DVR y cámaras IP.',
+                                                                                            textAlign: TextAlign.start,
+                                                                                            style: FlutterFlowTheme.of(context).labelLarge.override(
+                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  color: FlutterFlowTheme.of(context).accent4,
+                                                                                                  fontSize: 12.0,
+                                                                                                  letterSpacing: 0.5,
+                                                                                                  fontWeight: FontWeight.w500,
+                                                                                                  lineHeight: 1.5,
+                                                                                                ),
+                                                                                          ),
+                                                                                        ),
+                                                                                      ],
+                                                                                    ),
+                                                                                  ),
+                                                                                  Padding(
+                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                                                                                    child: Row(
+                                                                                      mainAxisSize: MainAxisSize.max,
+                                                                                      children: [
+                                                                                        Padding(
+                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 12.0, 4.0),
+                                                                                          child: FaIcon(
+                                                                                            FontAwesomeIcons.checkDouble,
+                                                                                            color: FlutterFlowTheme.of(context).alternate,
+                                                                                            size: 22.0,
+                                                                                          ),
+                                                                                        ),
+                                                                                        Expanded(
+                                                                                          child: Text(
+                                                                                            'Elaboración de rutinas para cámaras PTZ.',
+                                                                                            textAlign: TextAlign.start,
+                                                                                            style: FlutterFlowTheme.of(context).labelLarge.override(
+                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  color: FlutterFlowTheme.of(context).accent4,
+                                                                                                  fontSize: 12.0,
+                                                                                                  letterSpacing: 0.5,
+                                                                                                  fontWeight: FontWeight.w500,
+                                                                                                  lineHeight: 1.5,
+                                                                                                ),
+                                                                                          ),
+                                                                                        ),
+                                                                                      ],
+                                                                                    ),
+                                                                                  ),
+                                                                                  Padding(
+                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                                                                                    child: Row(
+                                                                                      mainAxisSize: MainAxisSize.max,
+                                                                                      children: [
+                                                                                        Padding(
+                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 12.0, 4.0),
+                                                                                          child: FaIcon(
+                                                                                            FontAwesomeIcons.checkDouble,
+                                                                                            color: FlutterFlowTheme.of(context).alternate,
+                                                                                            size: 22.0,
+                                                                                          ),
+                                                                                        ),
+                                                                                        Expanded(
+                                                                                          child: Text(
+                                                                                            'Programación para consola de control de videovigilancia (Joystick, teclado y Jog Dial)',
+                                                                                            textAlign: TextAlign.start,
+                                                                                            style: FlutterFlowTheme.of(context).labelLarge.override(
+                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  color: FlutterFlowTheme.of(context).accent4,
+                                                                                                  fontSize: 12.0,
+                                                                                                  letterSpacing: 0.5,
+                                                                                                  fontWeight: FontWeight.w500,
+                                                                                                  lineHeight: 1.5,
+                                                                                                ),
+                                                                                          ),
+                                                                                        ),
+                                                                                      ],
+                                                                                    ),
+                                                                                  ),
+                                                                                  Row(
+                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                    children: [
+                                                                                      Padding(
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 12.0, 4.0),
+                                                                                        child: FaIcon(
+                                                                                          FontAwesomeIcons.checkDouble,
+                                                                                          color: FlutterFlowTheme.of(context).alternate,
+                                                                                          size: 22.0,
+                                                                                        ),
+                                                                                      ),
+                                                                                      Expanded(
+                                                                                        child: Text(
+                                                                                          'Personal certificado en mantenimiento preventivo de sistemas CCTV.',
+                                                                                          textAlign: TextAlign.start,
+                                                                                          style: FlutterFlowTheme.of(context).labelLarge.override(
+                                                                                                fontFamily: 'Montserrat',
+                                                                                                color: FlutterFlowTheme.of(context).accent4,
+                                                                                                fontSize: 12.0,
+                                                                                                letterSpacing: 0.5,
+                                                                                                fontWeight: FontWeight.w500,
+                                                                                                lineHeight: 1.5,
+                                                                                              ),
+                                                                                        ),
+                                                                                      ),
+                                                                                    ],
+                                                                                  ),
+                                                                                ],
+                                                                              ),
+                                                                            ],
+                                                                          ),
+                                                                        ),
+                                                                      ),
+                                                                    ),
+                                                                  ],
+                                                                ),
+                                                                Row(
+                                                                  mainAxisSize:
+                                                                      MainAxisSize
+                                                                          .max,
+                                                                  children: [
+                                                                    Container(
+                                                                      width:
+                                                                          580.0,
+                                                                      height: double
+                                                                          .infinity,
+                                                                      decoration:
+                                                                          BoxDecoration(
+                                                                        color: FlutterFlowTheme.of(context)
+                                                                            .secondaryBackground,
+                                                                        image:
+                                                                            DecorationImage(
+                                                                          fit: BoxFit
+                                                                              .cover,
+                                                                          image:
+                                                                              Image.asset(
+                                                                            'assets/images/Captura_de_pantalla_2023-07-13_152624-transformed.png',
+                                                                          ).image,
+                                                                        ),
+                                                                      ),
+                                                                    ),
+                                                                    Expanded(
+                                                                      child:
+                                                                          Container(
+                                                                        width:
+                                                                            600.0,
+                                                                        decoration:
+                                                                            BoxDecoration(),
+                                                                        child:
+                                                                            Padding(
+                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                              68.0,
+                                                                              0.0,
+                                                                              68.0,
+                                                                              12.0),
+                                                                          child:
+                                                                              Column(
+                                                                            mainAxisSize:
+                                                                                MainAxisSize.max,
+                                                                            mainAxisAlignment:
+                                                                                MainAxisAlignment.spaceEvenly,
+                                                                            crossAxisAlignment:
+                                                                                CrossAxisAlignment.start,
+                                                                            children: [
+                                                                              Padding(
+                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
+                                                                                child: Text(
+                                                                                  'Área de Electricidad',
+                                                                                  textAlign: TextAlign.center,
+                                                                                  style: FlutterFlowTheme.of(context).displaySmall.override(
+                                                                                        fontFamily: 'Montserrat',
+                                                                                        color: FlutterFlowTheme.of(context).info,
+                                                                                        fontSize: 32.0,
+                                                                                        fontWeight: FontWeight.w500,
+                                                                                      ),
+                                                                                ),
+                                                                              ),
+                                                                              Column(
+                                                                                mainAxisSize: MainAxisSize.max,
+                                                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                children: [
+                                                                                  Padding(
+                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                                                                                    child: Row(
+                                                                                      mainAxisSize: MainAxisSize.max,
+                                                                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                                                                      children: [
+                                                                                        Padding(
+                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 12.0, 4.0),
+                                                                                          child: FaIcon(
+                                                                                            FontAwesomeIcons.checkDouble,
+                                                                                            color: FlutterFlowTheme.of(context).alternate,
+                                                                                            size: 22.0,
+                                                                                          ),
+                                                                                        ),
+                                                                                        Expanded(
+                                                                                          child: Text(
+                                                                                            'Ingeniería y ejecución de proyectos de electricidad.',
+                                                                                            textAlign: TextAlign.start,
+                                                                                            style: FlutterFlowTheme.of(context).labelLarge.override(
+                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  color: FlutterFlowTheme.of(context).accent4,
+                                                                                                  fontSize: 12.0,
+                                                                                                  letterSpacing: 0.5,
+                                                                                                  fontWeight: FontWeight.w500,
+                                                                                                  lineHeight: 1.5,
+                                                                                                ),
+                                                                                          ),
+                                                                                        ),
+                                                                                      ],
+                                                                                    ),
+                                                                                  ),
+                                                                                  Padding(
+                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                                                                                    child: Row(
+                                                                                      mainAxisSize: MainAxisSize.max,
+                                                                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                                                                      children: [
+                                                                                        Padding(
+                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 12.0, 4.0),
+                                                                                          child: FaIcon(
+                                                                                            FontAwesomeIcons.checkDouble,
+                                                                                            color: FlutterFlowTheme.of(context).alternate,
+                                                                                            size: 22.0,
+                                                                                          ),
+                                                                                        ),
+                                                                                        Expanded(
+                                                                                          child: Text(
+                                                                                            'Tendidos de baja y mediana tensión.',
+                                                                                            textAlign: TextAlign.start,
+                                                                                            style: FlutterFlowTheme.of(context).labelLarge.override(
+                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  color: FlutterFlowTheme.of(context).accent4,
+                                                                                                  fontSize: 12.0,
+                                                                                                  letterSpacing: 0.5,
+                                                                                                  fontWeight: FontWeight.w500,
+                                                                                                  lineHeight: 1.5,
+                                                                                                ),
+                                                                                          ),
+                                                                                        ),
+                                                                                      ],
+                                                                                    ),
+                                                                                  ),
+                                                                                  Padding(
+                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                                                                                    child: Row(
+                                                                                      mainAxisSize: MainAxisSize.max,
+                                                                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                                                                      children: [
+                                                                                        Padding(
+                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 12.0, 4.0),
+                                                                                          child: FaIcon(
+                                                                                            FontAwesomeIcons.checkDouble,
+                                                                                            color: FlutterFlowTheme.of(context).alternate,
+                                                                                            size: 22.0,
+                                                                                          ),
+                                                                                        ),
+                                                                                        Expanded(
+                                                                                          child: Text(
+                                                                                            'Sistema de puesta a tierra.',
+                                                                                            textAlign: TextAlign.start,
+                                                                                            style: FlutterFlowTheme.of(context).labelLarge.override(
+                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  color: FlutterFlowTheme.of(context).accent4,
+                                                                                                  fontSize: 12.0,
+                                                                                                  letterSpacing: 0.5,
+                                                                                                  fontWeight: FontWeight.w500,
+                                                                                                  lineHeight: 1.5,
+                                                                                                ),
+                                                                                          ),
+                                                                                        ),
+                                                                                      ],
+                                                                                    ),
+                                                                                  ),
+                                                                                  Padding(
+                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                                                                                    child: Row(
+                                                                                      mainAxisSize: MainAxisSize.max,
+                                                                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                                                                      children: [
+                                                                                        Padding(
+                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 12.0, 4.0),
+                                                                                          child: FaIcon(
+                                                                                            FontAwesomeIcons.checkDouble,
+                                                                                            color: FlutterFlowTheme.of(context).alternate,
+                                                                                            size: 22.0,
+                                                                                          ),
+                                                                                        ),
+                                                                                        Expanded(
+                                                                                          child: Text(
+                                                                                            'Instalación de equipos UPS monofasicos para contingencia eléctrica.',
+                                                                                            textAlign: TextAlign.start,
+                                                                                            style: FlutterFlowTheme.of(context).labelLarge.override(
+                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  color: FlutterFlowTheme.of(context).accent4,
+                                                                                                  fontSize: 12.0,
+                                                                                                  letterSpacing: 0.5,
+                                                                                                  fontWeight: FontWeight.w500,
+                                                                                                  lineHeight: 1.5,
+                                                                                                ),
+                                                                                          ),
+                                                                                        ),
+                                                                                      ],
+                                                                                    ),
+                                                                                  ),
+                                                                                  Padding(
+                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                                                                                    child: Row(
+                                                                                      mainAxisSize: MainAxisSize.max,
+                                                                                      children: [
+                                                                                        Padding(
+                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 12.0, 4.0),
+                                                                                          child: FaIcon(
+                                                                                            FontAwesomeIcons.checkDouble,
+                                                                                            color: FlutterFlowTheme.of(context).alternate,
+                                                                                            size: 22.0,
+                                                                                          ),
+                                                                                        ),
+                                                                                        Expanded(
+                                                                                          child: Text(
+                                                                                            'Instalación eléctrica de distribución y alumbrado.',
+                                                                                            textAlign: TextAlign.start,
+                                                                                            style: FlutterFlowTheme.of(context).labelLarge.override(
+                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  color: FlutterFlowTheme.of(context).accent4,
+                                                                                                  fontSize: 12.0,
+                                                                                                  letterSpacing: 0.5,
+                                                                                                  fontWeight: FontWeight.w500,
+                                                                                                  lineHeight: 1.5,
+                                                                                                ),
+                                                                                          ),
+                                                                                        ),
+                                                                                      ],
+                                                                                    ),
+                                                                                  ),
+                                                                                  Row(
+                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                    children: [
+                                                                                      Padding(
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 12.0, 4.0),
+                                                                                        child: FaIcon(
+                                                                                          FontAwesomeIcons.checkDouble,
+                                                                                          color: FlutterFlowTheme.of(context).alternate,
+                                                                                          size: 22.0,
+                                                                                        ),
+                                                                                      ),
+                                                                                      Expanded(
+                                                                                        child: Text(
+                                                                                          'Personal certificado en mantenimiento preventivo de sistemas CCTV.',
+                                                                                          textAlign: TextAlign.start,
+                                                                                          style: FlutterFlowTheme.of(context).labelLarge.override(
+                                                                                                fontFamily: 'Montserrat',
+                                                                                                color: FlutterFlowTheme.of(context).accent4,
+                                                                                                fontSize: 12.0,
+                                                                                                letterSpacing: 0.5,
+                                                                                                fontWeight: FontWeight.w500,
+                                                                                                lineHeight: 1.5,
+                                                                                              ),
+                                                                                        ),
+                                                                                      ),
+                                                                                    ],
+                                                                                  ),
+                                                                                ],
+                                                                              ),
+                                                                            ],
+                                                                          ),
+                                                                        ),
+                                                                      ),
+                                                                    ),
+                                                                  ],
+                                                                ),
+                                                              ],
+                                                            ),
+                                                          ),
+                                                          Align(
+                                                            alignment:
+                                                                AlignmentDirectional(
+                                                                    0.0, 1.0),
+                                                            child: Padding(
+                                                              padding:
+                                                                  EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          0.0,
+                                                                          0.0,
+                                                                          0.0,
+                                                                          24.0),
+                                                              child: smooth_page_indicator
+                                                                  .SmoothPageIndicator(
+                                                                controller: _model
+                                                                        .pageViewController1 ??=
+                                                                    PageController(
+                                                                        initialPage:
+                                                                            0),
+                                                                count: 3,
+                                                                axisDirection: Axis
+                                                                    .horizontal,
+                                                                onDotClicked:
+                                                                    (i) async {
+                                                                  await _model
+                                                                      .pageViewController1!
+                                                                      .animateToPage(
+                                                                    i,
+                                                                    duration: Duration(
+                                                                        milliseconds:
+                                                                            500),
+                                                                    curve: Curves
+                                                                        .ease,
+                                                                  );
+                                                                },
+                                                                effect: smooth_page_indicator
+                                                                    .ExpandingDotsEffect(
+                                                                  expansionFactor:
+                                                                      12.0,
+                                                                  spacing: 8.0,
+                                                                  radius: 3.0,
+                                                                  dotWidth: 6.0,
+                                                                  dotHeight:
+                                                                      4.0,
+                                                                  dotColor: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .alternate,
+                                                                  activeDotColor:
+                                                                      FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .tertiary,
+                                                                  paintStyle:
+                                                                      PaintingStyle
+                                                                          .fill,
+                                                                ),
+                                                              ),
+                                                            ),
+                                                          ),
+                                                        ],
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    Material(
+                                      color: Colors.transparent,
+                                      elevation: 3.0,
+                                      child: Container(
+                                        width: double.infinity,
+                                        height:
+                                            MediaQuery.sizeOf(context).height *
+                                                0.8,
+                                        decoration: BoxDecoration(
+                                          color:
+                                              FlutterFlowTheme.of(context).info,
+                                        ),
+                                        child: Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 20.0, 0.0, 0.0),
+                                          child: Column(
+                                            mainAxisSize: MainAxisSize.max,
+                                            children: [
+                                              Align(
+                                                alignment: AlignmentDirectional(
+                                                    -1.0, 1.0),
+                                                child: Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          0.0, 40.0, 0.0, 0.0),
+                                                  child: Row(
+                                                    mainAxisSize:
+                                                        MainAxisSize.max,
+                                                    crossAxisAlignment:
+                                                        CrossAxisAlignment.end,
+                                                    children: [
+                                                      Material(
+                                                        color:
+                                                            Colors.transparent,
+                                                        elevation: 1.0,
+                                                        child: Container(
+                                                          width: 114.0,
+                                                          height: 2.0,
+                                                          decoration:
+                                                              BoxDecoration(
+                                                            color: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .primaryBackground,
+                                                          ),
+                                                        ),
+                                                      ),
+                                                      Material(
+                                                        color:
+                                                            Colors.transparent,
+                                                        elevation: 1.0,
+                                                        child: Container(
+                                                          height: 32.0,
+                                                          decoration:
+                                                              BoxDecoration(
+                                                            color: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .primaryBackground,
+                                                          ),
+                                                          child: Align(
+                                                            alignment:
+                                                                AlignmentDirectional(
+                                                                    0.0, 0.0),
+                                                            child: Padding(
+                                                              padding:
+                                                                  EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          16.0,
+                                                                          4.0,
+                                                                          12.0,
+                                                                          2.0),
+                                                              child: Text(
+                                                                'Experiencias exitosas',
+                                                                style: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .headlineMedium
+                                                                    .override(
+                                                                      fontFamily:
+                                                                          'Ubuntu',
+                                                                      color: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .accent4,
+                                                                      fontSize:
+                                                                          16.0,
+                                                                      letterSpacing:
+                                                                          0.8,
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .normal,
+                                                                    ),
+                                                              ),
+                                                            ),
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
                                                 ),
                                               ),
                                               Expanded(
@@ -3223,13 +3255,12 @@ class _ProyectosWidgetState extends State<ProyectosWidget> {
                                                                 effect: smooth_page_indicator
                                                                     .ExpandingDotsEffect(
                                                                   expansionFactor:
-                                                                      8.0,
-                                                                  spacing: 8.0,
-                                                                  radius: 1.0,
-                                                                  dotWidth:
                                                                       12.0,
+                                                                  spacing: 8.0,
+                                                                  radius: 3.0,
+                                                                  dotWidth: 6.0,
                                                                   dotHeight:
-                                                                      2.0,
+                                                                      4.0,
                                                                   dotColor: FlutterFlowTheme.of(
                                                                           context)
                                                                       .alternate,
@@ -3763,6 +3794,7 @@ class _ProyectosWidgetState extends State<ProyectosWidget> {
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .secondaryBackground,
+                                                width: 1.0,
                                               ),
                                             ),
                                           ),
@@ -3776,6 +3808,11 @@ class _ProyectosWidgetState extends State<ProyectosWidget> {
                                     decoration: BoxDecoration(
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
+                                      border: Border.all(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
+                                        width: 1.0,
+                                      ),
                                     ),
                                   ),
                                 ],

@@ -64,12 +64,8 @@ class FFAppState extends ChangeNotifier {
   }
 
   List<String> _imagenesCertificaciones = [
-    'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/network-control-web-xvd8z9/assets/x91ayucifdqc/certificate_ernesto_daza_2022-1.png',
-    'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/network-control-web-xvd8z9/assets/0100lazzuvzn/certificate_oscar_daza_2022-1.png',
-    'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/network-control-web-xvd8z9/assets/x55x3r25pfnn/Certificacion_Cobre-1.png',
     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/network-control-web-xvd8z9/assets/een5bajeia2f/Axis_Ernesto_Daza_2019-1.png',
     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/network-control-web-xvd8z9/assets/rpoxg0jyjgw1/Axis_Oscar_Daza_2019-1.png',
-    'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/network-control-web-xvd8z9/assets/0tzjvao5m5di/Certificacion_Fibra-1.png',
     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/network-control-web-xvd8z9/assets/bph75u7wz197/Certificacion_OHDR-1.png',
     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/network-control-web-xvd8z9/assets/fmu1pcyij0bu/Certificacion_HEDR-1.png',
     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/network-control-web-xvd8z9/assets/stpfzxdoa5ee/Commscope_ACT_I-1.png',

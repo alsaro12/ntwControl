@@ -94,12 +94,10 @@ class _AliadosWidgetState extends State<AliadosWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .displayLarge
                                             .override(
-                                              fontFamily: 'Core Sans',
+                                              fontFamily: 'Rubik',
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .alternate,
-                                              fontSize: 66.0,
-                                              useGoogleFonts: false,
+                                                      .accent2,
                                               lineHeight: 1.2,
                                             ),
                                       ),
@@ -119,27 +117,35 @@ class _AliadosWidgetState extends State<AliadosWidget> {
                                                 height: 180.0,
                                                 child: Stack(
                                                   children: [
-                                                    Container(
-                                                      height: double.infinity,
-                                                      decoration:
-                                                          BoxDecoration(),
+                                                    Material(
+                                                      color: Colors.transparent,
+                                                      elevation: 1.0,
                                                       child: Container(
-                                                        width:
-                                                            MediaQuery.sizeOf(
-                                                                        context)
-                                                                    .width *
-                                                                1.0,
-                                                        height: 180.0,
-                                                        child: custom_widgets
-                                                            .CaruselPersonalizado(
+                                                        height: double.infinity,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .info,
+                                                        ),
+                                                        child: Container(
                                                           width:
                                                               MediaQuery.sizeOf(
                                                                           context)
                                                                       .width *
                                                                   1.0,
                                                           height: 180.0,
-                                                          images: FFAppState()
-                                                              .imagenesAliados,
+                                                          child: custom_widgets
+                                                              .CaruselPersonalizado(
+                                                            width: MediaQuery
+                                                                        .sizeOf(
+                                                                            context)
+                                                                    .width *
+                                                                1.0,
+                                                            height: 180.0,
+                                                            images: FFAppState()
+                                                                .imagenesAliados,
+                                                          ),
                                                         ),
                                                       ),
                                                     ),
@@ -725,6 +731,7 @@ class _AliadosWidgetState extends State<AliadosWidget> {
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .secondaryBackground,
+                                              width: 1.0,
                                             ),
                                           ),
                                         ),
@@ -738,6 +745,11 @@ class _AliadosWidgetState extends State<AliadosWidget> {
                                   decoration: BoxDecoration(
                                     color: FlutterFlowTheme.of(context)
                                         .secondaryBackground,
+                                    border: Border.all(
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
+                                      width: 1.0,
+                                    ),
                                   ),
                                 ),
                               ],

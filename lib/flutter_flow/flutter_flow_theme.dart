@@ -181,12 +181,12 @@ class ThemeTypography extends Typography {
 
   final FlutterFlowTheme theme;
 
-  String get displayLargeFamily => 'Core Sans';
-  TextStyle get displayLarge => TextStyle(
-        fontFamily: 'Core Sans',
+  String get displayLargeFamily => 'Rubik';
+  TextStyle get displayLarge => GoogleFonts.getFont(
+        'Rubik',
         color: theme.primaryText,
-        fontWeight: FontWeight.normal,
-        fontSize: 70.0,
+        fontWeight: FontWeight.w300,
+        fontSize: 66.0,
       );
   String get displayMediumFamily => 'Outfit';
   TextStyle get displayMedium => GoogleFonts.getFont(

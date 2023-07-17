@@ -77,9 +77,6 @@ class _CertificacionesWidgetState extends State<CertificacionesWidget> {
                               decoration: BoxDecoration(
                                 color: FlutterFlowTheme.of(context).info,
                                 borderRadius: BorderRadius.circular(0.0),
-                                border: Border.all(
-                                  color: FlutterFlowTheme.of(context).info,
-                                ),
                               ),
                               alignment: AlignmentDirectional(0.0, 0.0),
                               child: Column(
@@ -97,12 +94,10 @@ class _CertificacionesWidgetState extends State<CertificacionesWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .displayLarge
                                             .override(
-                                              fontFamily: 'Core Sans',
+                                              fontFamily: 'Rubik',
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .alternate,
-                                              fontSize: 66.0,
-                                              useGoogleFonts: false,
+                                                      .accent2,
                                               lineHeight: 1.2,
                                             ),
                                       ),
@@ -124,8 +119,12 @@ class _CertificacionesWidgetState extends State<CertificacionesWidget> {
                                                   children: [
                                                     Container(
                                                       height: double.infinity,
-                                                      decoration:
-                                                          BoxDecoration(),
+                                                      decoration: BoxDecoration(
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .info,
+                                                      ),
                                                       child: Container(
                                                         width:
                                                             MediaQuery.sizeOf(
@@ -728,6 +727,7 @@ class _CertificacionesWidgetState extends State<CertificacionesWidget> {
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .secondaryBackground,
+                                              width: 1.0,
                                             ),
                                           ),
                                         ),
@@ -741,6 +741,11 @@ class _CertificacionesWidgetState extends State<CertificacionesWidget> {
                                   decoration: BoxDecoration(
                                     color: FlutterFlowTheme.of(context)
                                         .secondaryBackground,
+                                    border: Border.all(
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
+                                      width: 1.0,
+                                    ),
                                   ),
                                 ),
                               ],

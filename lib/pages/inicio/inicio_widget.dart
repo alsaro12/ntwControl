@@ -90,7 +90,7 @@ class _InicioWidgetState extends State<InicioWidget> {
                                       children: [
                                         Container(
                                           width: double.infinity,
-                                          height: 140.0,
+                                          height: 120.0,
                                           decoration: BoxDecoration(),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -181,16 +181,10 @@ class _InicioWidgetState extends State<InicioWidget> {
                                                               .displayLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Core Sans',
+                                                                    'Rubik',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .tertiary,
-                                                                fontSize: 66.0,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .normal,
-                                                                useGoogleFonts:
-                                                                    false,
                                                                 lineHeight: 1.2,
                                                               ),
                                                     ),
@@ -299,80 +293,45 @@ class _InicioWidgetState extends State<InicioWidget> {
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
-                                              Row(
-                                                mainAxisSize: MainAxisSize.max,
-                                                children: [
-                                                  Expanded(
-                                                    child: Container(
-                                                      height: 180.0,
-                                                      child: Stack(
-                                                        children: [
-                                                          Container(
-                                                            height:
-                                                                double.infinity,
-                                                            decoration:
-                                                                BoxDecoration(),
-                                                            child: Container(
-                                                              width: MediaQuery
-                                                                          .sizeOf(
-                                                                              context)
-                                                                      .width *
-                                                                  1.0,
-                                                              height: 180.0,
-                                                              child: custom_widgets
-                                                                  .CaruselPersonalizado(
+                                              Container(
+                                                decoration: BoxDecoration(),
+                                                child: Row(
+                                                  mainAxisSize:
+                                                      MainAxisSize.max,
+                                                  children: [
+                                                    Expanded(
+                                                      child: Container(
+                                                        height: 180.0,
+                                                        child: Stack(
+                                                          children: [
+                                                            Container(
+                                                              height: double
+                                                                  .infinity,
+                                                              decoration:
+                                                                  BoxDecoration(
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .info,
+                                                              ),
+                                                              child: Container(
                                                                 width: MediaQuery.sizeOf(
                                                                             context)
                                                                         .width *
                                                                     1.0,
                                                                 height: 180.0,
-                                                                images: FFAppState()
-                                                                    .listaImagenesInicio,
+                                                                child: custom_widgets
+                                                                    .CaruselPersonalizado(
+                                                                  width: MediaQuery.sizeOf(
+                                                                              context)
+                                                                          .width *
+                                                                      1.0,
+                                                                  height: 180.0,
+                                                                  images: FFAppState()
+                                                                      .listaImagenesInicio,
+                                                                ),
                                                               ),
                                                             ),
-                                                          ),
-                                                          Container(
-                                                            width: 500.0,
-                                                            height:
-                                                                double.infinity,
-                                                            decoration:
-                                                                BoxDecoration(
-                                                              gradient:
-                                                                  LinearGradient(
-                                                                colors: [
-                                                                  Colors
-                                                                      .transparent,
-                                                                  Color(
-                                                                      0x42454545),
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .accent1,
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .secondaryBackground
-                                                                ],
-                                                                stops: [
-                                                                  0.0,
-                                                                  0.5,
-                                                                  0.9,
-                                                                  1.0
-                                                                ],
-                                                                begin:
-                                                                    AlignmentDirectional(
-                                                                        1.0,
-                                                                        0.0),
-                                                                end:
-                                                                    AlignmentDirectional(
-                                                                        -1.0,
-                                                                        0),
-                                                              ),
-                                                            ),
-                                                          ),
-                                                          Align(
-                                                            alignment:
-                                                                AlignmentDirectional(
-                                                                    1.0, 0.0),
-                                                            child: Container(
+                                                            Container(
                                                               width: 500.0,
                                                               height: double
                                                                   .infinity,
@@ -381,21 +340,21 @@ class _InicioWidgetState extends State<InicioWidget> {
                                                                 gradient:
                                                                     LinearGradient(
                                                                   colors: [
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .secondaryBackground,
+                                                                    Colors
+                                                                        .transparent,
+                                                                    Color(
+                                                                        0x42454545),
                                                                     FlutterFlowTheme.of(
                                                                             context)
                                                                         .accent1,
-                                                                    Color(
-                                                                        0x426F7073),
-                                                                    Color(
-                                                                        0x00F22233)
+                                                                    FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .secondaryBackground
                                                                   ],
                                                                   stops: [
                                                                     0.0,
-                                                                    0.1,
-                                                                    0.4,
+                                                                    0.5,
+                                                                    0.9,
                                                                     1.0
                                                                   ],
                                                                   begin:
@@ -409,12 +368,53 @@ class _InicioWidgetState extends State<InicioWidget> {
                                                                 ),
                                                               ),
                                                             ),
-                                                          ),
-                                                        ],
+                                                            Align(
+                                                              alignment:
+                                                                  AlignmentDirectional(
+                                                                      1.0, 0.0),
+                                                              child: Container(
+                                                                width: 500.0,
+                                                                height: double
+                                                                    .infinity,
+                                                                decoration:
+                                                                    BoxDecoration(
+                                                                  gradient:
+                                                                      LinearGradient(
+                                                                    colors: [
+                                                                      FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .secondaryBackground,
+                                                                      FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .accent1,
+                                                                      Color(
+                                                                          0x426F7073),
+                                                                      Color(
+                                                                          0x00F22233)
+                                                                    ],
+                                                                    stops: [
+                                                                      0.0,
+                                                                      0.1,
+                                                                      0.4,
+                                                                      1.0
+                                                                    ],
+                                                                    begin:
+                                                                        AlignmentDirectional(
+                                                                            1.0,
+                                                                            0.0),
+                                                                    end: AlignmentDirectional(
+                                                                        -1.0,
+                                                                        0),
+                                                                  ),
+                                                                ),
+                                                              ),
+                                                            ),
+                                                          ],
+                                                        ),
                                                       ),
                                                     ),
-                                                  ),
-                                                ],
+                                                  ],
+                                                ),
                                               ),
                                             ],
                                           ),
@@ -910,6 +910,7 @@ class _InicioWidgetState extends State<InicioWidget> {
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
+                                                    width: 1.0,
                                                   ),
                                                 ),
                                               ),
@@ -923,6 +924,11 @@ class _InicioWidgetState extends State<InicioWidget> {
                                         decoration: BoxDecoration(
                                           color: FlutterFlowTheme.of(context)
                                               .secondaryBackground,
+                                          border: Border.all(
+                                            color: FlutterFlowTheme.of(context)
+                                                .secondaryBackground,
+                                            width: 1.0,
+                                          ),
                                         ),
                                       ),
                                     ],
