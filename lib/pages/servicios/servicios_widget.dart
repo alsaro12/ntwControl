@@ -5,6 +5,7 @@ import '/pages/nav_bar/nav_bar_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 import 'servicios_model.dart';
 export 'servicios_model.dart';
@@ -64,101 +65,151 @@ class _ServiciosWidgetState extends State<ServiciosWidget> {
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
-                          Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 150.0, 0.0, 0.0),
-                                child: Container(
-                                  width: 1040.0,
-                                  decoration: BoxDecoration(),
-                                  child: Text(
-                                    'Descubra el liderazgo\nen tecnología y servicios.',
-                                    style: FlutterFlowTheme.of(context)
-                                        .displayLarge
-                                        .override(
-                                          fontFamily: 'Rubik',
-                                          color: FlutterFlowTheme.of(context)
-                                              .tertiary,
-                                          lineHeight: 1.2,
-                                        ),
-                                  ),
-                                ),
-                              ),
-                              Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 32.0, 0.0, 52.0),
-                                child: Container(
-                                  width: 1040.0,
-                                  decoration: BoxDecoration(),
-                                  child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 0.0, 48.0, 0.0),
-                                    child: Text(
-                                      'Nuestra empresa se sitúa en la vanguardia del sector al ofrecer soluciones innovadoras y de calidad excepcional. Exploramos constantemente las últimas tecnologías. Con nosotros, podrá experimentar el futuro de las telecomunicaciones, automatizaciones y control.',
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyLarge
-                                          .override(
-                                            fontFamily: 'Ubuntu',
-                                            color: FlutterFlowTheme.of(context)
-                                                .alternate,
-                                            fontSize: 14.0,
-                                            letterSpacing: 0.5,
-                                            fontWeight: FontWeight.normal,
-                                            lineHeight: 1.5,
-                                          ),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 0.0, 0.0, 100.0),
-                                child: Container(
-                                  width: 1040.0,
-                                  decoration: BoxDecoration(),
-                                  child: Row(
-                                    mainAxisSize: MainAxisSize.max,
-                                    children: [
-                                      Container(
-                                        width: 100.0,
-                                        height: 2.0,
-                                        decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
-                                              .secondary,
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            20.0, 0.0, 0.0, 0.0),
+                          Container(
+                            width: 1040.0,
+                            height: 550.0,
+                            decoration: BoxDecoration(),
+                            child: Stack(
+                              children: [
+                                Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0.0, 150.0, 0.0, 0.0),
+                                      child: Container(
+                                        width: 1040.0,
+                                        decoration: BoxDecoration(),
                                         child: Text(
-                                          'Bienvenido al mundo de la vanguardia empresarial.',
-                                          textAlign: TextAlign.start,
+                                          'Descubra el liderazgo\nen tecnología y servicios.',
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyLarge
+                                              .displayLarge
                                               .override(
-                                                fontFamily: 'Ubuntu',
+                                                fontFamily: 'Rubik',
                                                 color:
                                                     FlutterFlowTheme.of(context)
-                                                        .accent1,
-                                                fontSize: 18.0,
-                                                fontWeight: FontWeight.normal,
+                                                        .tertiary,
+                                                lineHeight: 1.2,
                                               ),
                                         ),
                                       ),
-                                    ],
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0.0, 32.0, 0.0, 52.0),
+                                      child: Container(
+                                        width: 1040.0,
+                                        decoration: BoxDecoration(),
+                                        child: Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 48.0, 0.0),
+                                          child: Text(
+                                            'Nuestra empresa se sitúa en la vanguardia del sector al ofrecer soluciones innovadoras y de calidad excepcional. Exploramos constantemente las últimas tecnologías. Con nosotros, podrá experimentar el futuro de las telecomunicaciones, automatizaciones y control.',
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyLarge
+                                                .override(
+                                                  fontFamily: 'Ubuntu',
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .alternate,
+                                                  fontSize: 14.0,
+                                                  letterSpacing: 0.5,
+                                                  fontWeight: FontWeight.normal,
+                                                  lineHeight: 1.5,
+                                                ),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    Container(
+                                      width: 1040.0,
+                                      decoration: BoxDecoration(),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        children: [
+                                          Container(
+                                            width: 100.0,
+                                            height: 2.0,
+                                            decoration: BoxDecoration(
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .secondary,
+                                            ),
+                                          ),
+                                          Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    20.0, 0.0, 0.0, 0.0),
+                                            child: Text(
+                                              'Bienvenido al mundo de la vanguardia empresarial.',
+                                              textAlign: TextAlign.start,
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyLarge
+                                                      .override(
+                                                        fontFamily: 'Ubuntu',
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .accent1,
+                                                        fontSize: 18.0,
+                                                        fontWeight:
+                                                            FontWeight.normal,
+                                                      ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Align(
+                                  alignment: AlignmentDirectional(1.0, 0.91),
+                                  child: Container(
+                                    height: 128.0,
+                                    child: Stack(
+                                      alignment:
+                                          AlignmentDirectional(0.0, -1.0),
+                                      children: [
+                                        Lottie.asset(
+                                          'assets/lottie_animations/animation_lk8nx63f.json',
+                                          height: 120.0,
+                                          fit: BoxFit.cover,
+                                          animate: true,
+                                        ),
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 2.0, 0.0, 0.0),
+                                          child: Text(
+                                            'Deslizar',
+                                            textAlign: TextAlign.start,
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyLarge
+                                                .override(
+                                                  fontFamily: 'Open Sans',
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .accent2,
+                                                  fontSize: 9.0,
+                                                  fontWeight: FontWeight.w500,
+                                                ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
                                   ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                           Column(
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Material(
                                 color: Colors.transparent,
-                                elevation: 3.0,
+                                elevation: 1.0,
                                 child: Container(
                                   width: double.infinity,
                                   height:
@@ -188,62 +239,56 @@ class _ServiciosWidgetState extends State<ServiciosWidget> {
                                               crossAxisAlignment:
                                                   CrossAxisAlignment.end,
                                               children: [
-                                                Material(
-                                                  color: Colors.transparent,
-                                                  elevation: 1.0,
-                                                  child: Container(
-                                                    width: 114.0,
-                                                    height: 2.0,
-                                                    decoration: BoxDecoration(
+                                                Container(
+                                                  width: 114.0,
+                                                  height: 2.0,
+                                                  decoration: BoxDecoration(
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .primaryBackground,
+                                                  ),
+                                                ),
+                                                Container(
+                                                  height: 32.0,
+                                                  decoration: BoxDecoration(
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .primaryBackground,
+                                                    border: Border.all(
                                                       color: FlutterFlowTheme
                                                               .of(context)
                                                           .primaryBackground,
                                                     ),
                                                   ),
-                                                ),
-                                                Material(
-                                                  color: Colors.transparent,
-                                                  elevation: 1.0,
-                                                  child: Container(
-                                                    height: 32.0,
-                                                    decoration: BoxDecoration(
-                                                      color: FlutterFlowTheme
-                                                              .of(context)
-                                                          .primaryBackground,
-                                                      border: Border.all(
-                                                        color: FlutterFlowTheme
-                                                                .of(context)
-                                                            .primaryBackground,
-                                                      ),
-                                                    ),
-                                                    child: Align(
-                                                      alignment:
-                                                          AlignmentDirectional(
-                                                              0.0, 0.0),
-                                                      child: Padding(
-                                                        padding:
-                                                            EdgeInsetsDirectional
-                                                                .fromSTEB(
-                                                                    16.0,
-                                                                    4.0,
-                                                                    12.0,
-                                                                    0.0),
-                                                        child: Text(
-                                                          'Nuestras soluciones',
-                                                          style: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .headlineMedium
-                                                              .override(
-                                                                fontFamily:
-                                                                    'Ubuntu',
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .accent4,
-                                                                fontSize: 16.0,
-                                                                letterSpacing:
-                                                                    0.8,
-                                                              ),
-                                                        ),
+                                                  child: Align(
+                                                    alignment:
+                                                        AlignmentDirectional(
+                                                            0.0, 0.0),
+                                                    child: Padding(
+                                                      padding:
+                                                          EdgeInsetsDirectional
+                                                              .fromSTEB(
+                                                                  16.0,
+                                                                  4.0,
+                                                                  12.0,
+                                                                  0.0),
+                                                      child: Text(
+                                                        'Nuestras soluciones',
+                                                        style:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .headlineMedium
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Ubuntu',
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .info,
+                                                                  fontSize:
+                                                                      15.0,
+                                                                  letterSpacing:
+                                                                      0.8,
+                                                                ),
                                                       ),
                                                     ),
                                                   ),
@@ -1036,7 +1081,7 @@ class _ServiciosWidgetState extends State<ServiciosWidget> {
                                                                     fontFamily:
                                                                         'Montserrat',
                                                                     fontSize:
-                                                                        20.0,
+                                                                        18.0,
                                                                   ),
                                                             ),
                                                           ],
@@ -1129,6 +1174,7 @@ class _ServiciosWidgetState extends State<ServiciosWidget> {
                                                                               color: FlutterFlowTheme.of(context).info,
                                                                               fontSize: 14.0,
                                                                               letterSpacing: 0.5,
+                                                                              fontWeight: FontWeight.w500,
                                                                               lineHeight: 1.2,
                                                                             ),
                                                                       ),
@@ -1245,7 +1291,7 @@ class _ServiciosWidgetState extends State<ServiciosWidget> {
                                                                     fontFamily:
                                                                         'Montserrat',
                                                                     fontSize:
-                                                                        20.0,
+                                                                        18.0,
                                                                   ),
                                                             ),
                                                             Padding(

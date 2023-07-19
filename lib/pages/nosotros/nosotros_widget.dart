@@ -64,217 +64,183 @@ class _NosotrosWidgetState extends State<NosotrosWidget> {
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
-                          Material(
-                            color: Colors.transparent,
-                            elevation: 3.0,
-                            child: Container(
-                              decoration: BoxDecoration(
-                                color: FlutterFlowTheme.of(context).info,
-                              ),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  Align(
-                                    alignment: AlignmentDirectional(-1.0, 1.0),
-                                    child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 71.0, 0.0, 0.0),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.end,
-                                        children: [
-                                          Material(
-                                            color: Colors.transparent,
-                                            elevation: 1.0,
-                                            child: Container(
-                                              width: 114.0,
-                                              height: 2.0,
-                                              decoration: BoxDecoration(
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .alternate,
-                                              ),
-                                            ),
+                          Container(
+                            height: MediaQuery.sizeOf(context).height * 0.8,
+                            decoration: BoxDecoration(),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Align(
+                                  alignment: AlignmentDirectional(-1.0, 1.0),
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 71.0, 0.0, 0.0),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.end,
+                                      children: [
+                                        Container(
+                                          width: 114.0,
+                                          height: 2.0,
+                                          decoration: BoxDecoration(
+                                            color: FlutterFlowTheme.of(context)
+                                                .alternate,
                                           ),
-                                          Material(
-                                            color: Colors.transparent,
-                                            elevation: 1.0,
-                                            child: Container(
-                                              height: 32.0,
-                                              decoration: BoxDecoration(
-                                                color:
+                                        ),
+                                        Container(
+                                          height: 32.0,
+                                          decoration: BoxDecoration(
+                                            color: FlutterFlowTheme.of(context)
+                                                .primaryBackground,
+                                          ),
+                                          child: Align(
+                                            alignment:
+                                                AlignmentDirectional(0.0, 0.0),
+                                            child: Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      16.0, 4.0, 16.0, 2.0),
+                                              child: Text(
+                                                'Nuestra política',
+                                                style:
                                                     FlutterFlowTheme.of(context)
-                                                        .primaryBackground,
-                                              ),
-                                              child: Align(
-                                                alignment: AlignmentDirectional(
-                                                    0.0, 0.0),
-                                                child: Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          16.0, 4.0, 16.0, 2.0),
-                                                  child: Text(
-                                                    'Nuestra política',
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
                                                         .headlineMedium
                                                         .override(
                                                           fontFamily: 'Ubuntu',
                                                           color: FlutterFlowTheme
                                                                   .of(context)
-                                                              .accent4,
+                                                              .info,
                                                           fontSize: 16.0,
                                                           letterSpacing: 0.8,
                                                           fontWeight:
                                                               FontWeight.normal,
                                                         ),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                Align(
+                                  alignment: AlignmentDirectional(-1.0, 1.0),
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 0.0, 0.0, 1.0),
+                                    child: Container(
+                                      width: double.infinity,
+                                      decoration: BoxDecoration(
+                                        borderRadius:
+                                            BorderRadius.circular(0.0),
+                                      ),
+                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 50.0, 0.0, 0.0),
+                                            child: Container(
+                                              width: 1040.0,
+                                              decoration: BoxDecoration(),
+                                              child: Text(
+                                                'Comprometidos con la seguridad, salud y el medio ambiente.',
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .displayLarge
+                                                        .override(
+                                                          fontFamily: 'Rubik',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .tertiary,
+                                                          lineHeight: 1.2,
+                                                        ),
+                                              ),
+                                            ),
+                                          ),
+                                          Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 32.0, 0.0, 52.0),
+                                            child: Container(
+                                              width: 1040.0,
+                                              decoration: BoxDecoration(),
+                                              child: Text(
+                                                'En Network Control, la seguridad y la sostenibilidad son nuestra prioridad. Garantizamos un entorno óptimo para nuestros trabajadores y preservamos la integridad física de nuestras instalaciones. Protegemos el medio ambiente evitando eventos no deseados y enfermedades profesionales. Nuestro enfoque integral promueve la seguridad del equipo y la responsabilidad ambiental.',
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyLarge
+                                                        .override(
+                                                          fontFamily: 'Ubuntu',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .alternate,
+                                                          fontSize: 14.0,
+                                                          letterSpacing: 0.5,
+                                                          fontWeight:
+                                                              FontWeight.normal,
+                                                          lineHeight: 1.5,
+                                                        ),
+                                              ),
+                                            ),
+                                          ),
+                                          Container(
+                                            width: 1040.0,
+                                            decoration: BoxDecoration(),
+                                            child: Row(
+                                              mainAxisSize: MainAxisSize.max,
+                                              children: [
+                                                Container(
+                                                  width: 100.0,
+                                                  height: 2.0,
+                                                  decoration: BoxDecoration(
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .secondary,
                                                   ),
                                                 ),
-                                              ),
+                                                Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          20.0, 0.0, 0.0, 0.0),
+                                                  child: Text(
+                                                    'Únete a nosotros para un futuro seguro y sostenible.',
+                                                    textAlign: TextAlign.start,
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyLarge
+                                                        .override(
+                                                          fontFamily: 'Ubuntu',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .accent1,
+                                                          fontSize: 18.0,
+                                                          fontWeight:
+                                                              FontWeight.normal,
+                                                        ),
+                                                  ),
+                                                ),
+                                              ],
                                             ),
                                           ),
                                         ],
                                       ),
                                     ),
                                   ),
-                                  Align(
-                                    alignment: AlignmentDirectional(-1.0, 1.0),
-                                    child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 0.0, 0.0, 1.0),
-                                      child: Container(
-                                        width: double.infinity,
-                                        decoration: BoxDecoration(
-                                          borderRadius:
-                                              BorderRadius.circular(0.0),
-                                        ),
-                                        alignment:
-                                            AlignmentDirectional(0.0, 0.0),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      0.0, 50.0, 0.0, 0.0),
-                                              child: Container(
-                                                width: 1040.0,
-                                                decoration: BoxDecoration(),
-                                                child: Text(
-                                                  'Comprometidos con la seguridad, salud y el medio ambiente.',
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .displayLarge
-                                                      .override(
-                                                        fontFamily: 'Rubik',
-                                                        color:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .tertiary,
-                                                        lineHeight: 1.2,
-                                                      ),
-                                                ),
-                                              ),
-                                            ),
-                                            Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      0.0, 32.0, 0.0, 52.0),
-                                              child: Container(
-                                                width: 1040.0,
-                                                decoration: BoxDecoration(),
-                                                child: Text(
-                                                  'En Network Control, la seguridad y la sostenibilidad son nuestra prioridad. Garantizamos un entorno óptimo para nuestros trabajadores y preservamos la integridad física de nuestras instalaciones. Protegemos el medio ambiente evitando eventos no deseados y enfermedades profesionales. Nuestro enfoque integral promueve la seguridad del equipo y la responsabilidad ambiental.',
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .bodyLarge
-                                                      .override(
-                                                        fontFamily: 'Ubuntu',
-                                                        color:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .alternate,
-                                                        fontSize: 14.0,
-                                                        letterSpacing: 0.5,
-                                                        fontWeight:
-                                                            FontWeight.normal,
-                                                        lineHeight: 1.5,
-                                                      ),
-                                                ),
-                                              ),
-                                            ),
-                                            Container(
-                                              width: 1040.0,
-                                              decoration: BoxDecoration(),
-                                              child: Padding(
-                                                padding: EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        0.0, 0.0, 0.0, 100.0),
-                                                child: Row(
-                                                  mainAxisSize:
-                                                      MainAxisSize.max,
-                                                  children: [
-                                                    Container(
-                                                      width: 100.0,
-                                                      height: 2.0,
-                                                      decoration: BoxDecoration(
-                                                        color:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .secondary,
-                                                      ),
-                                                    ),
-                                                    Padding(
-                                                      padding:
-                                                          EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  20.0,
-                                                                  0.0,
-                                                                  0.0,
-                                                                  0.0),
-                                                      child: Text(
-                                                        'Únete a nosotros para un futuro seguro y sostenible.',
-                                                        textAlign:
-                                                            TextAlign.start,
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyLarge
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Ubuntu',
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .accent1,
-                                                                  fontSize:
-                                                                      18.0,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .normal,
-                                                                ),
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
+                                ),
+                              ],
                             ),
                           ),
                           Material(
                             color: Colors.transparent,
-                            elevation: 3.0,
+                            elevation: 2.0,
                             child: Container(
                               width: double.infinity,
                               height: 340.0,
@@ -431,7 +397,7 @@ class _NosotrosWidgetState extends State<NosotrosWidget> {
                                                                       fontFamily:
                                                                           'Montserrat',
                                                                       fontSize:
-                                                                          20.0,
+                                                                          18.0,
                                                                     ),
                                                               ),
                                                             ],
@@ -521,6 +487,7 @@ class _NosotrosWidgetState extends State<NosotrosWidget> {
                                                                                 color: FlutterFlowTheme.of(context).info,
                                                                                 fontSize: 14.0,
                                                                                 letterSpacing: 0.5,
+                                                                                fontWeight: FontWeight.w500,
                                                                                 lineHeight: 1.2,
                                                                               ),
                                                                         ),
@@ -636,7 +603,7 @@ class _NosotrosWidgetState extends State<NosotrosWidget> {
                                                                       fontFamily:
                                                                           'Montserrat',
                                                                       fontSize:
-                                                                          20.0,
+                                                                          18.0,
                                                                     ),
                                                               ),
                                                               Padding(

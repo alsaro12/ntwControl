@@ -51,7 +51,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
       children: [
         Material(
           color: Colors.transparent,
-          elevation: 4.0,
+          elevation: 2.0,
           child: Container(
             width: double.infinity,
             height: 92.0,
@@ -62,7 +62,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
               ),
             ),
             child: Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(24.0, 28.0, 52.0, 0.0),
+              padding: EdgeInsetsDirectional.fromSTEB(24.0, 12.0, 52.0, 0.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.end,
