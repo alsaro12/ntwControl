@@ -1224,12 +1224,13 @@ class _ProyectosWidgetState extends State<ProyectosWidget> {
                                             ),
                                           ),
                                           Align(
-                                            alignment:
-                                                AlignmentDirectional(0.88, 0.9),
+                                            alignment: AlignmentDirectional(
+                                                0.83, 0.18),
                                             child: Lottie.asset(
-                                              'assets/lottie_animations/animation_lk97nfva.json',
-                                              height: 80.0,
+                                              'assets/lottie_animations/123.json',
+                                              height: 38.0,
                                               fit: BoxFit.cover,
+                                              frameRate: FrameRate(5.0),
                                               animate: true,
                                             ),
                                           ),
@@ -3502,43 +3503,13 @@ class _ProyectosWidgetState extends State<ProyectosWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.8, 0.91),
-                                          child: Container(
-                                            height: 128.0,
-                                            child: Stack(
-                                              alignment: AlignmentDirectional(
-                                                  0.0, -1.0),
-                                              children: [
-                                                Lottie.asset(
-                                                  'assets/lottie_animations/YX5te0AKEM.json',
-                                                  height: 80.0,
-                                                  fit: BoxFit.cover,
-                                                  animate: true,
-                                                ),
-                                                Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          0.0, 2.0, 0.0, 0.0),
-                                                  child: Text(
-                                                    'Deslizar',
-                                                    textAlign: TextAlign.start,
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyLarge
-                                                        .override(
-                                                          fontFamily:
-                                                              'Open Sans',
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .accent2,
-                                                          fontSize: 9.0,
-                                                          fontWeight:
-                                                              FontWeight.w500,
-                                                        ),
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
+                                              AlignmentDirectional(0.83, 0.18),
+                                          child: Lottie.asset(
+                                            'assets/lottie_animations/animation_lka2bkft.json',
+                                            height: 38.0,
+                                            fit: BoxFit.cover,
+                                            frameRate: FrameRate(5.0),
+                                            animate: true,
                                           ),
                                         ),
                                       ],
