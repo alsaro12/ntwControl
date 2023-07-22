@@ -1,3 +1,4 @@
+import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -5,6 +6,8 @@ import '/pages/nav_bar/nav_bar_widget.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart'
     as smooth_page_indicator;
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
@@ -19,10 +22,73 @@ class ProyectosWidget extends StatefulWidget {
   _ProyectosWidgetState createState() => _ProyectosWidgetState();
 }
 
-class _ProyectosWidgetState extends State<ProyectosWidget> {
+class _ProyectosWidgetState extends State<ProyectosWidget>
+    with TickerProviderStateMixin {
   late ProyectosModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
+
+  final animationsMap = {
+    'columnOnPageLoadAnimation': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        VisibilityEffect(duration: 1.ms),
+        FadeEffect(
+          curve: Curves.easeOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: 0.0,
+          end: 1.0,
+        ),
+        MoveEffect(
+          curve: Curves.easeOut,
+          delay: 0.ms,
+          duration: 1200.ms,
+          begin: Offset(100.0, 0.0),
+          end: Offset(0.0, 0.0),
+        ),
+      ],
+    ),
+    'stackOnPageLoadAnimation': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.easeOut,
+          delay: 1600.ms,
+          duration: 600.ms,
+          begin: 0.0,
+          end: 1.0,
+        ),
+        ShakeEffect(
+          curve: Curves.easeInOut,
+          delay: 1800.ms,
+          duration: 1000.ms,
+          hz: 1,
+          offset: Offset(0.0, -12.0),
+          rotation: 0,
+        ),
+      ],
+    ),
+    'rowOnPageLoadAnimation': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.easeOut,
+          delay: 2400.ms,
+          duration: 600.ms,
+          begin: 0.0,
+          end: 1.0,
+        ),
+        MoveEffect(
+          curve: Curves.easeOut,
+          delay: 2600.ms,
+          duration: 1200.ms,
+          begin: Offset(-100.0, 0.0),
+          end: Offset(0.0, 0.0),
+        ),
+      ],
+    ),
+  };
 
   @override
   void initState() {
@@ -187,7 +253,8 @@ class _ProyectosWidgetState extends State<ProyectosWidget> {
                                               ),
                                             ),
                                           ],
-                                        ),
+                                        ).animateOnPageLoad(animationsMap[
+                                            'columnOnPageLoadAnimation']!),
                                         Align(
                                           alignment:
                                               AlignmentDirectional(1.0, 0.91),
@@ -227,7 +294,8 @@ class _ProyectosWidgetState extends State<ProyectosWidget> {
                                                 ),
                                               ],
                                             ),
-                                          ),
+                                          ).animateOnPageLoad(animationsMap[
+                                              'stackOnPageLoadAnimation']!),
                                         ),
                                       ],
                                     ),
@@ -237,9 +305,7 @@ class _ProyectosWidgetState extends State<ProyectosWidget> {
                                     elevation: 2.0,
                                     child: Container(
                                       width: double.infinity,
-                                      height:
-                                          MediaQuery.sizeOf(context).height *
-                                              0.76,
+                                      height: 640.0,
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .accent1,
@@ -319,7 +385,8 @@ class _ProyectosWidgetState extends State<ProyectosWidget> {
                                                         ),
                                                       ),
                                                     ],
-                                                  ),
+                                                  ).animateOnPageLoad(animationsMap[
+                                                      'rowOnPageLoadAnimation']!),
                                                 ),
                                                 Container(
                                                   width: 1040.0,
@@ -1230,7 +1297,7 @@ class _ProyectosWidgetState extends State<ProyectosWidget> {
                                               'assets/lottie_animations/123.json',
                                               height: 38.0,
                                               fit: BoxFit.cover,
-                                              frameRate: FrameRate(5.0),
+                                              frameRate: FrameRate(4.0),
                                               animate: true,
                                             ),
                                           ),
@@ -1240,8 +1307,7 @@ class _ProyectosWidgetState extends State<ProyectosWidget> {
                                   ),
                                   Container(
                                     width: double.infinity,
-                                    height: MediaQuery.sizeOf(context).height *
-                                        0.76,
+                                    height: 640.0,
                                     decoration: BoxDecoration(),
                                     child: Stack(
                                       children: [
@@ -3508,7 +3574,7 @@ class _ProyectosWidgetState extends State<ProyectosWidget> {
                                             'assets/lottie_animations/animation_lka2bkft.json',
                                             height: 38.0,
                                             fit: BoxFit.cover,
-                                            frameRate: FrameRate(5.0),
+                                            frameRate: FrameRate(4.0),
                                             animate: true,
                                           ),
                                         ),
@@ -3626,6 +3692,35 @@ class _ProyectosWidgetState extends State<ProyectosWidget> {
                                                     1.0, 0.0),
                                                 end: AlignmentDirectional(
                                                     -1.0, 0),
+                                              ),
+                                            ),
+                                          ),
+                                          Align(
+                                            alignment:
+                                                AlignmentDirectional(0.0, 0.0),
+                                            child: Container(
+                                              width: double.infinity,
+                                              height: double.infinity,
+                                              decoration: BoxDecoration(
+                                                gradient: LinearGradient(
+                                                  colors: [
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
+                                                    Color(0x990D0D0D),
+                                                    Color(0x000D0D0D)
+                                                  ],
+                                                  stops: [0.0, 0.3, 0.55],
+                                                  begin: AlignmentDirectional(
+                                                      -1.0, 0.0),
+                                                  end: AlignmentDirectional(
+                                                      1.0, 0),
+                                                ),
+                                                border: Border.all(
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .secondaryBackground,
+                                                  width: 1.0,
+                                                ),
                                               ),
                                             ),
                                           ),
@@ -3989,35 +4084,6 @@ class _ProyectosWidgetState extends State<ProyectosWidget> {
                                               ],
                                             ),
                                           ),
-                                          Align(
-                                            alignment:
-                                                AlignmentDirectional(0.0, 0.0),
-                                            child: Container(
-                                              width: double.infinity,
-                                              height: double.infinity,
-                                              decoration: BoxDecoration(
-                                                gradient: LinearGradient(
-                                                  colors: [
-                                                    FlutterFlowTheme.of(context)
-                                                        .secondaryBackground,
-                                                    Color(0x990D0D0D),
-                                                    Color(0x000D0D0D)
-                                                  ],
-                                                  stops: [0.0, 0.3, 0.55],
-                                                  begin: AlignmentDirectional(
-                                                      -1.0, 0.0),
-                                                  end: AlignmentDirectional(
-                                                      1.0, 0),
-                                                ),
-                                                border: Border.all(
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .secondaryBackground,
-                                                  width: 1.0,
-                                                ),
-                                              ),
-                                            ),
-                                          ),
                                         ],
                                       ),
                                     ),
@@ -4052,7 +4118,7 @@ class _ProyectosWidgetState extends State<ProyectosWidget> {
                   child: Image.asset(
                     'assets/images/Frame_35.png',
                     width: 212.0,
-                    height: 118.0,
+                    height: 112.0,
                     fit: BoxFit.contain,
                   ),
                 ),

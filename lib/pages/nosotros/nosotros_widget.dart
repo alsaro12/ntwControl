@@ -1,8 +1,11 @@
+import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/pages/nav_bar/nav_bar_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -16,10 +19,54 @@ class NosotrosWidget extends StatefulWidget {
   _NosotrosWidgetState createState() => _NosotrosWidgetState();
 }
 
-class _NosotrosWidgetState extends State<NosotrosWidget> {
+class _NosotrosWidgetState extends State<NosotrosWidget>
+    with TickerProviderStateMixin {
   late NosotrosModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
+
+  final animationsMap = {
+    'rowOnPageLoadAnimation': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        VisibilityEffect(duration: 1.ms),
+        FadeEffect(
+          curve: Curves.easeOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: 0.0,
+          end: 1.0,
+        ),
+        MoveEffect(
+          curve: Curves.easeOut,
+          delay: 0.ms,
+          duration: 1200.ms,
+          begin: Offset(-100.0, 0.0),
+          end: Offset(0.0, 0.0),
+        ),
+      ],
+    ),
+    'columnOnPageLoadAnimation': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        VisibilityEffect(duration: 1.ms),
+        FadeEffect(
+          curve: Curves.easeOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: 0.0,
+          end: 1.0,
+        ),
+        MoveEffect(
+          curve: Curves.easeOut,
+          delay: 0.ms,
+          duration: 1200.ms,
+          begin: Offset(100.0, 0.0),
+          end: Offset(0.0, 0.0),
+        ),
+      ],
+    ),
+  };
 
   @override
   void initState() {
@@ -65,7 +112,7 @@ class _NosotrosWidgetState extends State<NosotrosWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Container(
-                            height: MediaQuery.sizeOf(context).height * 0.8,
+                            height: 640.0,
                             decoration: BoxDecoration(),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -121,7 +168,8 @@ class _NosotrosWidgetState extends State<NosotrosWidget> {
                                           ),
                                         ),
                                       ],
-                                    ),
+                                    ).animateOnPageLoad(animationsMap[
+                                        'rowOnPageLoadAnimation']!),
                                   ),
                                 ),
                                 Align(
@@ -231,7 +279,8 @@ class _NosotrosWidgetState extends State<NosotrosWidget> {
                                             ),
                                           ),
                                         ],
-                                      ),
+                                      ).animateOnPageLoad(animationsMap[
+                                          'columnOnPageLoadAnimation']!),
                                     ),
                                   ),
                                 ),
@@ -342,6 +391,35 @@ class _NosotrosWidgetState extends State<NosotrosWidget> {
                                                   1.0, 0.0),
                                               end:
                                                   AlignmentDirectional(-1.0, 0),
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(0.0, 0.0),
+                                          child: Container(
+                                            width: double.infinity,
+                                            height: double.infinity,
+                                            decoration: BoxDecoration(
+                                              gradient: LinearGradient(
+                                                colors: [
+                                                  FlutterFlowTheme.of(context)
+                                                      .secondaryBackground,
+                                                  Color(0x990D0D0D),
+                                                  Color(0x000D0D0D)
+                                                ],
+                                                stops: [0.0, 0.3, 0.55],
+                                                begin: AlignmentDirectional(
+                                                    -1.0, 0.0),
+                                                end: AlignmentDirectional(
+                                                    1.0, 0),
+                                              ),
+                                              border: Border.all(
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
+                                                width: 1.0,
+                                              ),
                                             ),
                                           ),
                                         ),
@@ -722,35 +800,6 @@ class _NosotrosWidgetState extends State<NosotrosWidget> {
                                             ],
                                           ),
                                         ),
-                                        Align(
-                                          alignment:
-                                              AlignmentDirectional(0.0, 0.0),
-                                          child: Container(
-                                            width: double.infinity,
-                                            height: double.infinity,
-                                            decoration: BoxDecoration(
-                                              gradient: LinearGradient(
-                                                colors: [
-                                                  FlutterFlowTheme.of(context)
-                                                      .secondaryBackground,
-                                                  Color(0x990D0D0D),
-                                                  Color(0x000D0D0D)
-                                                ],
-                                                stops: [0.0, 0.3, 0.55],
-                                                begin: AlignmentDirectional(
-                                                    -1.0, 0.0),
-                                                end: AlignmentDirectional(
-                                                    1.0, 0),
-                                              ),
-                                              border: Border.all(
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .secondaryBackground,
-                                                width: 1.0,
-                                              ),
-                                            ),
-                                          ),
-                                        ),
                                       ],
                                     ),
                                   ),
@@ -784,7 +833,7 @@ class _NosotrosWidgetState extends State<NosotrosWidget> {
                   child: Image.asset(
                     'assets/images/Frame_35.png',
                     width: 212.0,
-                    height: 118.0,
+                    height: 112.0,
                     fit: BoxFit.contain,
                   ),
                 ),

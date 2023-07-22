@@ -1,9 +1,12 @@
+import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/pages/nav_bar/nav_bar_widget.dart';
 import '/custom_code/widgets/index.dart' as custom_widgets;
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -17,10 +20,33 @@ class AliadosWidget extends StatefulWidget {
   _AliadosWidgetState createState() => _AliadosWidgetState();
 }
 
-class _AliadosWidgetState extends State<AliadosWidget> {
+class _AliadosWidgetState extends State<AliadosWidget>
+    with TickerProviderStateMixin {
   late AliadosModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
+
+  final animationsMap = {
+    'textOnPageLoadAnimation': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.easeOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: 0.0,
+          end: 1.0,
+        ),
+        MoveEffect(
+          curve: Curves.easeOut,
+          delay: 0.ms,
+          duration: 1200.ms,
+          begin: Offset(100.0, 0.0),
+          end: Offset(0.0, 0.0),
+        ),
+      ],
+    ),
+  };
 
   @override
   void initState() {
@@ -92,7 +118,8 @@ class _AliadosWidgetState extends State<AliadosWidget> {
                                                 .alternate,
                                             lineHeight: 1.2,
                                           ),
-                                    ),
+                                    ).animateOnPageLoad(animationsMap[
+                                        'textOnPageLoadAnimation']!),
                                   ),
                                 ),
                                 Padding(
@@ -318,6 +345,35 @@ class _AliadosWidgetState extends State<AliadosWidget> {
                                                   1.0, 0.0),
                                               end:
                                                   AlignmentDirectional(-1.0, 0),
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(0.0, 0.0),
+                                          child: Container(
+                                            width: double.infinity,
+                                            height: double.infinity,
+                                            decoration: BoxDecoration(
+                                              gradient: LinearGradient(
+                                                colors: [
+                                                  FlutterFlowTheme.of(context)
+                                                      .secondaryBackground,
+                                                  Color(0x990D0D0D),
+                                                  Color(0x000D0D0D)
+                                                ],
+                                                stops: [0.0, 0.3, 0.55],
+                                                begin: AlignmentDirectional(
+                                                    -1.0, 0.0),
+                                                end: AlignmentDirectional(
+                                                    1.0, 0),
+                                              ),
+                                              border: Border.all(
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
+                                                width: 1.0,
+                                              ),
                                             ),
                                           ),
                                         ),
@@ -698,35 +754,6 @@ class _AliadosWidgetState extends State<AliadosWidget> {
                                             ],
                                           ),
                                         ),
-                                        Align(
-                                          alignment:
-                                              AlignmentDirectional(0.0, 0.0),
-                                          child: Container(
-                                            width: double.infinity,
-                                            height: double.infinity,
-                                            decoration: BoxDecoration(
-                                              gradient: LinearGradient(
-                                                colors: [
-                                                  FlutterFlowTheme.of(context)
-                                                      .secondaryBackground,
-                                                  Color(0x990D0D0D),
-                                                  Color(0x000D0D0D)
-                                                ],
-                                                stops: [0.0, 0.3, 0.55],
-                                                begin: AlignmentDirectional(
-                                                    -1.0, 0.0),
-                                                end: AlignmentDirectional(
-                                                    1.0, 0),
-                                              ),
-                                              border: Border.all(
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .secondaryBackground,
-                                                width: 1.0,
-                                              ),
-                                            ),
-                                          ),
-                                        ),
                                       ],
                                     ),
                                   ),
@@ -760,7 +787,7 @@ class _AliadosWidgetState extends State<AliadosWidget> {
                   child: Image.asset(
                     'assets/images/Frame_35.png',
                     width: 212.0,
-                    height: 118.0,
+                    height: 112.0,
                     fit: BoxFit.contain,
                   ),
                 ),
